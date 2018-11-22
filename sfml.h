@@ -15,11 +15,13 @@ public:
 
     virtual ~sfml();
 
-    void initialise();
-    void ResizeView(const sf::RenderWindow& window, sf::View& view);
+    sf::RenderWindow& initialize();
+    void run(sf::RenderWindow& window);
+    void ResizeView(const sf::RenderWindow& window, sf::View& view, float);
 
-private:
-    float VIEW_HEIGHT = 521.6f;
+    void addFig(std::vector<float> size, sf::RenderWindow& window);
+
+public:
 };
 
 
