@@ -1,11 +1,15 @@
 file(REMOVE_RECURSE
   "CMakeFiles/roadfighter_sfml.dir/main.cpp.o"
   "CMakeFiles/roadfighter_sfml.dir/Game.cpp.o"
-  "CMakeFiles/roadfighter_sfml.dir/sfml.cpp.o"
-  "CMakeFiles/roadfighter_sfml.dir/world.cpp.o"
+  "CMakeFiles/roadfighter_sfml.dir/Entity.cpp.o"
+  "CMakeFiles/roadfighter_sfml.dir/World.cpp.o"
   "CMakeFiles/roadfighter_sfml.dir/Car.cpp.o"
+  "CMakeFiles/roadfighter_sfml.dir/EnemyCar.cpp.o"
   "CMakeFiles/roadfighter_sfml.dir/Player.cpp.o"
-  "CMakeFiles/roadfighter_sfml.dir/fig.cpp.o"
+  "CMakeFiles/roadfighter_sfml.dir/CarSFML.cpp.o"
+  "CMakeFiles/roadfighter_sfml.dir/PlayerCar.cpp.o"
+  "CMakeFiles/roadfighter_sfml.dir/PlayerCarSFML.cpp.o"
+  "CMakeFiles/roadfighter_sfml.dir/Collider.cpp.o"
   "roadfighter_sfml.pdb"
   "roadfighter_sfml"
 )

@@ -105,52 +105,52 @@ CMakeFiles/roadfighter_sfml.dir/Game.cpp.o.provides: CMakeFiles/roadfighter_sfml
 CMakeFiles/roadfighter_sfml.dir/Game.cpp.o.provides.build: CMakeFiles/roadfighter_sfml.dir/Game.cpp.o
 
 
-CMakeFiles/roadfighter_sfml.dir/sfml.cpp.o: CMakeFiles/roadfighter_sfml.dir/flags.make
-CMakeFiles/roadfighter_sfml.dir/sfml.cpp.o: ../sfml.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nick/Desktop/roadfighter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/roadfighter_sfml.dir/sfml.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roadfighter_sfml.dir/sfml.cpp.o -c /home/nick/Desktop/roadfighter/sfml.cpp
+CMakeFiles/roadfighter_sfml.dir/Entity.cpp.o: CMakeFiles/roadfighter_sfml.dir/flags.make
+CMakeFiles/roadfighter_sfml.dir/Entity.cpp.o: ../Entity.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nick/Desktop/roadfighter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/roadfighter_sfml.dir/Entity.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roadfighter_sfml.dir/Entity.cpp.o -c /home/nick/Desktop/roadfighter/Entity.cpp
 
-CMakeFiles/roadfighter_sfml.dir/sfml.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roadfighter_sfml.dir/sfml.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nick/Desktop/roadfighter/sfml.cpp > CMakeFiles/roadfighter_sfml.dir/sfml.cpp.i
+CMakeFiles/roadfighter_sfml.dir/Entity.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roadfighter_sfml.dir/Entity.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nick/Desktop/roadfighter/Entity.cpp > CMakeFiles/roadfighter_sfml.dir/Entity.cpp.i
 
-CMakeFiles/roadfighter_sfml.dir/sfml.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roadfighter_sfml.dir/sfml.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nick/Desktop/roadfighter/sfml.cpp -o CMakeFiles/roadfighter_sfml.dir/sfml.cpp.s
+CMakeFiles/roadfighter_sfml.dir/Entity.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roadfighter_sfml.dir/Entity.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nick/Desktop/roadfighter/Entity.cpp -o CMakeFiles/roadfighter_sfml.dir/Entity.cpp.s
 
-CMakeFiles/roadfighter_sfml.dir/sfml.cpp.o.requires:
+CMakeFiles/roadfighter_sfml.dir/Entity.cpp.o.requires:
 
-.PHONY : CMakeFiles/roadfighter_sfml.dir/sfml.cpp.o.requires
+.PHONY : CMakeFiles/roadfighter_sfml.dir/Entity.cpp.o.requires
 
-CMakeFiles/roadfighter_sfml.dir/sfml.cpp.o.provides: CMakeFiles/roadfighter_sfml.dir/sfml.cpp.o.requires
-	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/sfml.cpp.o.provides.build
-.PHONY : CMakeFiles/roadfighter_sfml.dir/sfml.cpp.o.provides
+CMakeFiles/roadfighter_sfml.dir/Entity.cpp.o.provides: CMakeFiles/roadfighter_sfml.dir/Entity.cpp.o.requires
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/Entity.cpp.o.provides.build
+.PHONY : CMakeFiles/roadfighter_sfml.dir/Entity.cpp.o.provides
 
-CMakeFiles/roadfighter_sfml.dir/sfml.cpp.o.provides.build: CMakeFiles/roadfighter_sfml.dir/sfml.cpp.o
+CMakeFiles/roadfighter_sfml.dir/Entity.cpp.o.provides.build: CMakeFiles/roadfighter_sfml.dir/Entity.cpp.o
 
 
-CMakeFiles/roadfighter_sfml.dir/world.cpp.o: CMakeFiles/roadfighter_sfml.dir/flags.make
-CMakeFiles/roadfighter_sfml.dir/world.cpp.o: ../world.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nick/Desktop/roadfighter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/roadfighter_sfml.dir/world.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roadfighter_sfml.dir/world.cpp.o -c /home/nick/Desktop/roadfighter/world.cpp
+CMakeFiles/roadfighter_sfml.dir/World.cpp.o: CMakeFiles/roadfighter_sfml.dir/flags.make
+CMakeFiles/roadfighter_sfml.dir/World.cpp.o: ../World.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nick/Desktop/roadfighter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/roadfighter_sfml.dir/World.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roadfighter_sfml.dir/World.cpp.o -c /home/nick/Desktop/roadfighter/World.cpp
 
-CMakeFiles/roadfighter_sfml.dir/world.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roadfighter_sfml.dir/world.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nick/Desktop/roadfighter/world.cpp > CMakeFiles/roadfighter_sfml.dir/world.cpp.i
+CMakeFiles/roadfighter_sfml.dir/World.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roadfighter_sfml.dir/World.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nick/Desktop/roadfighter/World.cpp > CMakeFiles/roadfighter_sfml.dir/World.cpp.i
 
-CMakeFiles/roadfighter_sfml.dir/world.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roadfighter_sfml.dir/world.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nick/Desktop/roadfighter/world.cpp -o CMakeFiles/roadfighter_sfml.dir/world.cpp.s
+CMakeFiles/roadfighter_sfml.dir/World.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roadfighter_sfml.dir/World.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nick/Desktop/roadfighter/World.cpp -o CMakeFiles/roadfighter_sfml.dir/World.cpp.s
 
-CMakeFiles/roadfighter_sfml.dir/world.cpp.o.requires:
+CMakeFiles/roadfighter_sfml.dir/World.cpp.o.requires:
 
-.PHONY : CMakeFiles/roadfighter_sfml.dir/world.cpp.o.requires
+.PHONY : CMakeFiles/roadfighter_sfml.dir/World.cpp.o.requires
 
-CMakeFiles/roadfighter_sfml.dir/world.cpp.o.provides: CMakeFiles/roadfighter_sfml.dir/world.cpp.o.requires
-	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/world.cpp.o.provides.build
-.PHONY : CMakeFiles/roadfighter_sfml.dir/world.cpp.o.provides
+CMakeFiles/roadfighter_sfml.dir/World.cpp.o.provides: CMakeFiles/roadfighter_sfml.dir/World.cpp.o.requires
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/World.cpp.o.provides.build
+.PHONY : CMakeFiles/roadfighter_sfml.dir/World.cpp.o.provides
 
-CMakeFiles/roadfighter_sfml.dir/world.cpp.o.provides.build: CMakeFiles/roadfighter_sfml.dir/world.cpp.o
+CMakeFiles/roadfighter_sfml.dir/World.cpp.o.provides.build: CMakeFiles/roadfighter_sfml.dir/World.cpp.o
 
 
 CMakeFiles/roadfighter_sfml.dir/Car.cpp.o: CMakeFiles/roadfighter_sfml.dir/flags.make
@@ -177,9 +177,33 @@ CMakeFiles/roadfighter_sfml.dir/Car.cpp.o.provides: CMakeFiles/roadfighter_sfml.
 CMakeFiles/roadfighter_sfml.dir/Car.cpp.o.provides.build: CMakeFiles/roadfighter_sfml.dir/Car.cpp.o
 
 
+CMakeFiles/roadfighter_sfml.dir/EnemyCar.cpp.o: CMakeFiles/roadfighter_sfml.dir/flags.make
+CMakeFiles/roadfighter_sfml.dir/EnemyCar.cpp.o: ../EnemyCar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nick/Desktop/roadfighter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/roadfighter_sfml.dir/EnemyCar.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roadfighter_sfml.dir/EnemyCar.cpp.o -c /home/nick/Desktop/roadfighter/EnemyCar.cpp
+
+CMakeFiles/roadfighter_sfml.dir/EnemyCar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roadfighter_sfml.dir/EnemyCar.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nick/Desktop/roadfighter/EnemyCar.cpp > CMakeFiles/roadfighter_sfml.dir/EnemyCar.cpp.i
+
+CMakeFiles/roadfighter_sfml.dir/EnemyCar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roadfighter_sfml.dir/EnemyCar.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nick/Desktop/roadfighter/EnemyCar.cpp -o CMakeFiles/roadfighter_sfml.dir/EnemyCar.cpp.s
+
+CMakeFiles/roadfighter_sfml.dir/EnemyCar.cpp.o.requires:
+
+.PHONY : CMakeFiles/roadfighter_sfml.dir/EnemyCar.cpp.o.requires
+
+CMakeFiles/roadfighter_sfml.dir/EnemyCar.cpp.o.provides: CMakeFiles/roadfighter_sfml.dir/EnemyCar.cpp.o.requires
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/EnemyCar.cpp.o.provides.build
+.PHONY : CMakeFiles/roadfighter_sfml.dir/EnemyCar.cpp.o.provides
+
+CMakeFiles/roadfighter_sfml.dir/EnemyCar.cpp.o.provides.build: CMakeFiles/roadfighter_sfml.dir/EnemyCar.cpp.o
+
+
 CMakeFiles/roadfighter_sfml.dir/Player.cpp.o: CMakeFiles/roadfighter_sfml.dir/flags.make
 CMakeFiles/roadfighter_sfml.dir/Player.cpp.o: ../Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nick/Desktop/roadfighter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/roadfighter_sfml.dir/Player.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nick/Desktop/roadfighter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/roadfighter_sfml.dir/Player.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roadfighter_sfml.dir/Player.cpp.o -c /home/nick/Desktop/roadfighter/Player.cpp
 
 CMakeFiles/roadfighter_sfml.dir/Player.cpp.i: cmake_force
@@ -201,56 +225,136 @@ CMakeFiles/roadfighter_sfml.dir/Player.cpp.o.provides: CMakeFiles/roadfighter_sf
 CMakeFiles/roadfighter_sfml.dir/Player.cpp.o.provides.build: CMakeFiles/roadfighter_sfml.dir/Player.cpp.o
 
 
-CMakeFiles/roadfighter_sfml.dir/fig.cpp.o: CMakeFiles/roadfighter_sfml.dir/flags.make
-CMakeFiles/roadfighter_sfml.dir/fig.cpp.o: ../fig.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nick/Desktop/roadfighter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/roadfighter_sfml.dir/fig.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roadfighter_sfml.dir/fig.cpp.o -c /home/nick/Desktop/roadfighter/fig.cpp
+CMakeFiles/roadfighter_sfml.dir/CarSFML.cpp.o: CMakeFiles/roadfighter_sfml.dir/flags.make
+CMakeFiles/roadfighter_sfml.dir/CarSFML.cpp.o: ../CarSFML.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nick/Desktop/roadfighter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/roadfighter_sfml.dir/CarSFML.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roadfighter_sfml.dir/CarSFML.cpp.o -c /home/nick/Desktop/roadfighter/CarSFML.cpp
 
-CMakeFiles/roadfighter_sfml.dir/fig.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roadfighter_sfml.dir/fig.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nick/Desktop/roadfighter/fig.cpp > CMakeFiles/roadfighter_sfml.dir/fig.cpp.i
+CMakeFiles/roadfighter_sfml.dir/CarSFML.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roadfighter_sfml.dir/CarSFML.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nick/Desktop/roadfighter/CarSFML.cpp > CMakeFiles/roadfighter_sfml.dir/CarSFML.cpp.i
 
-CMakeFiles/roadfighter_sfml.dir/fig.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roadfighter_sfml.dir/fig.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nick/Desktop/roadfighter/fig.cpp -o CMakeFiles/roadfighter_sfml.dir/fig.cpp.s
+CMakeFiles/roadfighter_sfml.dir/CarSFML.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roadfighter_sfml.dir/CarSFML.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nick/Desktop/roadfighter/CarSFML.cpp -o CMakeFiles/roadfighter_sfml.dir/CarSFML.cpp.s
 
-CMakeFiles/roadfighter_sfml.dir/fig.cpp.o.requires:
+CMakeFiles/roadfighter_sfml.dir/CarSFML.cpp.o.requires:
 
-.PHONY : CMakeFiles/roadfighter_sfml.dir/fig.cpp.o.requires
+.PHONY : CMakeFiles/roadfighter_sfml.dir/CarSFML.cpp.o.requires
 
-CMakeFiles/roadfighter_sfml.dir/fig.cpp.o.provides: CMakeFiles/roadfighter_sfml.dir/fig.cpp.o.requires
-	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/fig.cpp.o.provides.build
-.PHONY : CMakeFiles/roadfighter_sfml.dir/fig.cpp.o.provides
+CMakeFiles/roadfighter_sfml.dir/CarSFML.cpp.o.provides: CMakeFiles/roadfighter_sfml.dir/CarSFML.cpp.o.requires
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/CarSFML.cpp.o.provides.build
+.PHONY : CMakeFiles/roadfighter_sfml.dir/CarSFML.cpp.o.provides
 
-CMakeFiles/roadfighter_sfml.dir/fig.cpp.o.provides.build: CMakeFiles/roadfighter_sfml.dir/fig.cpp.o
+CMakeFiles/roadfighter_sfml.dir/CarSFML.cpp.o.provides.build: CMakeFiles/roadfighter_sfml.dir/CarSFML.cpp.o
+
+
+CMakeFiles/roadfighter_sfml.dir/PlayerCar.cpp.o: CMakeFiles/roadfighter_sfml.dir/flags.make
+CMakeFiles/roadfighter_sfml.dir/PlayerCar.cpp.o: ../PlayerCar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nick/Desktop/roadfighter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/roadfighter_sfml.dir/PlayerCar.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roadfighter_sfml.dir/PlayerCar.cpp.o -c /home/nick/Desktop/roadfighter/PlayerCar.cpp
+
+CMakeFiles/roadfighter_sfml.dir/PlayerCar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roadfighter_sfml.dir/PlayerCar.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nick/Desktop/roadfighter/PlayerCar.cpp > CMakeFiles/roadfighter_sfml.dir/PlayerCar.cpp.i
+
+CMakeFiles/roadfighter_sfml.dir/PlayerCar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roadfighter_sfml.dir/PlayerCar.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nick/Desktop/roadfighter/PlayerCar.cpp -o CMakeFiles/roadfighter_sfml.dir/PlayerCar.cpp.s
+
+CMakeFiles/roadfighter_sfml.dir/PlayerCar.cpp.o.requires:
+
+.PHONY : CMakeFiles/roadfighter_sfml.dir/PlayerCar.cpp.o.requires
+
+CMakeFiles/roadfighter_sfml.dir/PlayerCar.cpp.o.provides: CMakeFiles/roadfighter_sfml.dir/PlayerCar.cpp.o.requires
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/PlayerCar.cpp.o.provides.build
+.PHONY : CMakeFiles/roadfighter_sfml.dir/PlayerCar.cpp.o.provides
+
+CMakeFiles/roadfighter_sfml.dir/PlayerCar.cpp.o.provides.build: CMakeFiles/roadfighter_sfml.dir/PlayerCar.cpp.o
+
+
+CMakeFiles/roadfighter_sfml.dir/PlayerCarSFML.cpp.o: CMakeFiles/roadfighter_sfml.dir/flags.make
+CMakeFiles/roadfighter_sfml.dir/PlayerCarSFML.cpp.o: ../PlayerCarSFML.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nick/Desktop/roadfighter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/roadfighter_sfml.dir/PlayerCarSFML.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roadfighter_sfml.dir/PlayerCarSFML.cpp.o -c /home/nick/Desktop/roadfighter/PlayerCarSFML.cpp
+
+CMakeFiles/roadfighter_sfml.dir/PlayerCarSFML.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roadfighter_sfml.dir/PlayerCarSFML.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nick/Desktop/roadfighter/PlayerCarSFML.cpp > CMakeFiles/roadfighter_sfml.dir/PlayerCarSFML.cpp.i
+
+CMakeFiles/roadfighter_sfml.dir/PlayerCarSFML.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roadfighter_sfml.dir/PlayerCarSFML.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nick/Desktop/roadfighter/PlayerCarSFML.cpp -o CMakeFiles/roadfighter_sfml.dir/PlayerCarSFML.cpp.s
+
+CMakeFiles/roadfighter_sfml.dir/PlayerCarSFML.cpp.o.requires:
+
+.PHONY : CMakeFiles/roadfighter_sfml.dir/PlayerCarSFML.cpp.o.requires
+
+CMakeFiles/roadfighter_sfml.dir/PlayerCarSFML.cpp.o.provides: CMakeFiles/roadfighter_sfml.dir/PlayerCarSFML.cpp.o.requires
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/PlayerCarSFML.cpp.o.provides.build
+.PHONY : CMakeFiles/roadfighter_sfml.dir/PlayerCarSFML.cpp.o.provides
+
+CMakeFiles/roadfighter_sfml.dir/PlayerCarSFML.cpp.o.provides.build: CMakeFiles/roadfighter_sfml.dir/PlayerCarSFML.cpp.o
+
+
+CMakeFiles/roadfighter_sfml.dir/Collider.cpp.o: CMakeFiles/roadfighter_sfml.dir/flags.make
+CMakeFiles/roadfighter_sfml.dir/Collider.cpp.o: ../Collider.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nick/Desktop/roadfighter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/roadfighter_sfml.dir/Collider.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/roadfighter_sfml.dir/Collider.cpp.o -c /home/nick/Desktop/roadfighter/Collider.cpp
+
+CMakeFiles/roadfighter_sfml.dir/Collider.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/roadfighter_sfml.dir/Collider.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nick/Desktop/roadfighter/Collider.cpp > CMakeFiles/roadfighter_sfml.dir/Collider.cpp.i
+
+CMakeFiles/roadfighter_sfml.dir/Collider.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/roadfighter_sfml.dir/Collider.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nick/Desktop/roadfighter/Collider.cpp -o CMakeFiles/roadfighter_sfml.dir/Collider.cpp.s
+
+CMakeFiles/roadfighter_sfml.dir/Collider.cpp.o.requires:
+
+.PHONY : CMakeFiles/roadfighter_sfml.dir/Collider.cpp.o.requires
+
+CMakeFiles/roadfighter_sfml.dir/Collider.cpp.o.provides: CMakeFiles/roadfighter_sfml.dir/Collider.cpp.o.requires
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/Collider.cpp.o.provides.build
+.PHONY : CMakeFiles/roadfighter_sfml.dir/Collider.cpp.o.provides
+
+CMakeFiles/roadfighter_sfml.dir/Collider.cpp.o.provides.build: CMakeFiles/roadfighter_sfml.dir/Collider.cpp.o
 
 
 # Object files for target roadfighter_sfml
 roadfighter_sfml_OBJECTS = \
 "CMakeFiles/roadfighter_sfml.dir/main.cpp.o" \
 "CMakeFiles/roadfighter_sfml.dir/Game.cpp.o" \
-"CMakeFiles/roadfighter_sfml.dir/sfml.cpp.o" \
-"CMakeFiles/roadfighter_sfml.dir/world.cpp.o" \
+"CMakeFiles/roadfighter_sfml.dir/Entity.cpp.o" \
+"CMakeFiles/roadfighter_sfml.dir/World.cpp.o" \
 "CMakeFiles/roadfighter_sfml.dir/Car.cpp.o" \
+"CMakeFiles/roadfighter_sfml.dir/EnemyCar.cpp.o" \
 "CMakeFiles/roadfighter_sfml.dir/Player.cpp.o" \
-"CMakeFiles/roadfighter_sfml.dir/fig.cpp.o"
+"CMakeFiles/roadfighter_sfml.dir/CarSFML.cpp.o" \
+"CMakeFiles/roadfighter_sfml.dir/PlayerCar.cpp.o" \
+"CMakeFiles/roadfighter_sfml.dir/PlayerCarSFML.cpp.o" \
+"CMakeFiles/roadfighter_sfml.dir/Collider.cpp.o"
 
 # External object files for target roadfighter_sfml
 roadfighter_sfml_EXTERNAL_OBJECTS =
 
 roadfighter_sfml: CMakeFiles/roadfighter_sfml.dir/main.cpp.o
 roadfighter_sfml: CMakeFiles/roadfighter_sfml.dir/Game.cpp.o
-roadfighter_sfml: CMakeFiles/roadfighter_sfml.dir/sfml.cpp.o
-roadfighter_sfml: CMakeFiles/roadfighter_sfml.dir/world.cpp.o
+roadfighter_sfml: CMakeFiles/roadfighter_sfml.dir/Entity.cpp.o
+roadfighter_sfml: CMakeFiles/roadfighter_sfml.dir/World.cpp.o
 roadfighter_sfml: CMakeFiles/roadfighter_sfml.dir/Car.cpp.o
+roadfighter_sfml: CMakeFiles/roadfighter_sfml.dir/EnemyCar.cpp.o
 roadfighter_sfml: CMakeFiles/roadfighter_sfml.dir/Player.cpp.o
-roadfighter_sfml: CMakeFiles/roadfighter_sfml.dir/fig.cpp.o
+roadfighter_sfml: CMakeFiles/roadfighter_sfml.dir/CarSFML.cpp.o
+roadfighter_sfml: CMakeFiles/roadfighter_sfml.dir/PlayerCar.cpp.o
+roadfighter_sfml: CMakeFiles/roadfighter_sfml.dir/PlayerCarSFML.cpp.o
+roadfighter_sfml: CMakeFiles/roadfighter_sfml.dir/Collider.cpp.o
 roadfighter_sfml: CMakeFiles/roadfighter_sfml.dir/build.make
 roadfighter_sfml: /usr/lib/x86_64-linux-gnu/libsfml-system.so
 roadfighter_sfml: /usr/lib/x86_64-linux-gnu/libsfml-window.so
 roadfighter_sfml: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so
 roadfighter_sfml: CMakeFiles/roadfighter_sfml.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nick/Desktop/roadfighter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable roadfighter_sfml"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nick/Desktop/roadfighter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable roadfighter_sfml"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/roadfighter_sfml.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -260,11 +364,15 @@ CMakeFiles/roadfighter_sfml.dir/build: roadfighter_sfml
 
 CMakeFiles/roadfighter_sfml.dir/requires: CMakeFiles/roadfighter_sfml.dir/main.cpp.o.requires
 CMakeFiles/roadfighter_sfml.dir/requires: CMakeFiles/roadfighter_sfml.dir/Game.cpp.o.requires
-CMakeFiles/roadfighter_sfml.dir/requires: CMakeFiles/roadfighter_sfml.dir/sfml.cpp.o.requires
-CMakeFiles/roadfighter_sfml.dir/requires: CMakeFiles/roadfighter_sfml.dir/world.cpp.o.requires
+CMakeFiles/roadfighter_sfml.dir/requires: CMakeFiles/roadfighter_sfml.dir/Entity.cpp.o.requires
+CMakeFiles/roadfighter_sfml.dir/requires: CMakeFiles/roadfighter_sfml.dir/World.cpp.o.requires
 CMakeFiles/roadfighter_sfml.dir/requires: CMakeFiles/roadfighter_sfml.dir/Car.cpp.o.requires
+CMakeFiles/roadfighter_sfml.dir/requires: CMakeFiles/roadfighter_sfml.dir/EnemyCar.cpp.o.requires
 CMakeFiles/roadfighter_sfml.dir/requires: CMakeFiles/roadfighter_sfml.dir/Player.cpp.o.requires
-CMakeFiles/roadfighter_sfml.dir/requires: CMakeFiles/roadfighter_sfml.dir/fig.cpp.o.requires
+CMakeFiles/roadfighter_sfml.dir/requires: CMakeFiles/roadfighter_sfml.dir/CarSFML.cpp.o.requires
+CMakeFiles/roadfighter_sfml.dir/requires: CMakeFiles/roadfighter_sfml.dir/PlayerCar.cpp.o.requires
+CMakeFiles/roadfighter_sfml.dir/requires: CMakeFiles/roadfighter_sfml.dir/PlayerCarSFML.cpp.o.requires
+CMakeFiles/roadfighter_sfml.dir/requires: CMakeFiles/roadfighter_sfml.dir/Collider.cpp.o.requires
 
 .PHONY : CMakeFiles/roadfighter_sfml.dir/requires
 

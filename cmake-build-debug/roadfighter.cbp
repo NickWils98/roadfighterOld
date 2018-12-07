@@ -176,6 +176,30 @@
 		<Unit filename="/home/nick/Desktop/roadfighter/Car.h">
 			<Option target="roadfighter_sfml"/>
 		</Unit>
+		<Unit filename="/home/nick/Desktop/roadfighter/CarSFML.cpp">
+			<Option target="roadfighter_sfml"/>
+		</Unit>
+		<Unit filename="/home/nick/Desktop/roadfighter/CarSFML.h">
+			<Option target="roadfighter_sfml"/>
+		</Unit>
+		<Unit filename="/home/nick/Desktop/roadfighter/Collider.cpp">
+			<Option target="roadfighter_sfml"/>
+		</Unit>
+		<Unit filename="/home/nick/Desktop/roadfighter/Collider.h">
+			<Option target="roadfighter_sfml"/>
+		</Unit>
+		<Unit filename="/home/nick/Desktop/roadfighter/EnemyCar.cpp">
+			<Option target="roadfighter_sfml"/>
+		</Unit>
+		<Unit filename="/home/nick/Desktop/roadfighter/EnemyCar.h">
+			<Option target="roadfighter_sfml"/>
+		</Unit>
+		<Unit filename="/home/nick/Desktop/roadfighter/Entity.cpp">
+			<Option target="roadfighter_sfml"/>
+		</Unit>
+		<Unit filename="/home/nick/Desktop/roadfighter/Entity.h">
+			<Option target="roadfighter_sfml"/>
+		</Unit>
 		<Unit filename="/home/nick/Desktop/roadfighter/Game.cpp">
 			<Option target="roadfighter_sfml"/>
 		</Unit>
@@ -188,27 +212,27 @@
 		<Unit filename="/home/nick/Desktop/roadfighter/Player.h">
 			<Option target="roadfighter_sfml"/>
 		</Unit>
-		<Unit filename="/home/nick/Desktop/roadfighter/fig.cpp">
+		<Unit filename="/home/nick/Desktop/roadfighter/PlayerCar.cpp">
 			<Option target="roadfighter_sfml"/>
 		</Unit>
-		<Unit filename="/home/nick/Desktop/roadfighter/fig.h">
+		<Unit filename="/home/nick/Desktop/roadfighter/PlayerCar.h">
+			<Option target="roadfighter_sfml"/>
+		</Unit>
+		<Unit filename="/home/nick/Desktop/roadfighter/PlayerCarSFML.cpp">
+			<Option target="roadfighter_sfml"/>
+		</Unit>
+		<Unit filename="/home/nick/Desktop/roadfighter/PlayerCarSFML.h">
+			<Option target="roadfighter_sfml"/>
+		</Unit>
+		<Unit filename="/home/nick/Desktop/roadfighter/World.cpp">
+			<Option target="roadfighter_sfml"/>
+		</Unit>
+		<Unit filename="/home/nick/Desktop/roadfighter/World.h">
 			<Option target="roadfighter_sfml"/>
 		</Unit>
 		<Unit filename="/home/nick/Desktop/roadfighter/main.cpp">
 			<Option target="roadfighter_sfml"/>
 			<Option target="roadfighter"/>
-		</Unit>
-		<Unit filename="/home/nick/Desktop/roadfighter/sfml.cpp">
-			<Option target="roadfighter_sfml"/>
-		</Unit>
-		<Unit filename="/home/nick/Desktop/roadfighter/sfml.h">
-			<Option target="roadfighter_sfml"/>
-		</Unit>
-		<Unit filename="/home/nick/Desktop/roadfighter/world.cpp">
-			<Option target="roadfighter_sfml"/>
-		</Unit>
-		<Unit filename="/home/nick/Desktop/roadfighter/world.h">
-			<Option target="roadfighter_sfml"/>
 		</Unit>
 		<Unit filename="/home/nick/Desktop/roadfighter/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

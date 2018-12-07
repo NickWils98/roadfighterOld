@@ -3,33 +3,57 @@
 
 CMakeFiles/roadfighter_sfml.dir/Car.cpp.o: ../Car.cpp
 CMakeFiles/roadfighter_sfml.dir/Car.cpp.o: ../Car.h
+CMakeFiles/roadfighter_sfml.dir/Car.cpp.o: ../Entity.h
 
+CMakeFiles/roadfighter_sfml.dir/CarSFML.cpp.o: ../Car.h
+CMakeFiles/roadfighter_sfml.dir/CarSFML.cpp.o: ../CarSFML.cpp
+CMakeFiles/roadfighter_sfml.dir/CarSFML.cpp.o: ../CarSFML.h
+CMakeFiles/roadfighter_sfml.dir/CarSFML.cpp.o: ../EnemyCar.h
+CMakeFiles/roadfighter_sfml.dir/CarSFML.cpp.o: ../Entity.h
+
+CMakeFiles/roadfighter_sfml.dir/Collider.cpp.o: ../Collider.cpp
+CMakeFiles/roadfighter_sfml.dir/Collider.cpp.o: ../Collider.h
+CMakeFiles/roadfighter_sfml.dir/Collider.cpp.o: ../Entity.h
+
+CMakeFiles/roadfighter_sfml.dir/EnemyCar.cpp.o: ../Car.h
+CMakeFiles/roadfighter_sfml.dir/EnemyCar.cpp.o: ../EnemyCar.cpp
+CMakeFiles/roadfighter_sfml.dir/EnemyCar.cpp.o: ../EnemyCar.h
+CMakeFiles/roadfighter_sfml.dir/EnemyCar.cpp.o: ../Entity.h
+
+CMakeFiles/roadfighter_sfml.dir/Entity.cpp.o: ../Entity.cpp
+CMakeFiles/roadfighter_sfml.dir/Entity.cpp.o: ../Entity.h
+
+CMakeFiles/roadfighter_sfml.dir/Game.cpp.o: ../Car.h
+CMakeFiles/roadfighter_sfml.dir/Game.cpp.o: ../CarSFML.h
+CMakeFiles/roadfighter_sfml.dir/Game.cpp.o: ../EnemyCar.h
+CMakeFiles/roadfighter_sfml.dir/Game.cpp.o: ../Entity.h
 CMakeFiles/roadfighter_sfml.dir/Game.cpp.o: ../Game.cpp
 CMakeFiles/roadfighter_sfml.dir/Game.cpp.o: ../Game.h
+CMakeFiles/roadfighter_sfml.dir/Game.cpp.o: ../PlayerCar.h
+CMakeFiles/roadfighter_sfml.dir/Game.cpp.o: ../PlayerCarSFML.h
+CMakeFiles/roadfighter_sfml.dir/Game.cpp.o: ../World.h
 
-CMakeFiles/roadfighter_sfml.dir/Player.cpp.o: ../Car.h
-CMakeFiles/roadfighter_sfml.dir/Player.cpp.o: ../Game.h
 CMakeFiles/roadfighter_sfml.dir/Player.cpp.o: ../Player.cpp
 CMakeFiles/roadfighter_sfml.dir/Player.cpp.o: ../Player.h
-CMakeFiles/roadfighter_sfml.dir/Player.cpp.o: ../sfml.h
 
-CMakeFiles/roadfighter_sfml.dir/fig.cpp.o: ../fig.cpp
-CMakeFiles/roadfighter_sfml.dir/fig.cpp.o: ../fig.h
+CMakeFiles/roadfighter_sfml.dir/PlayerCar.cpp.o: ../Car.h
+CMakeFiles/roadfighter_sfml.dir/PlayerCar.cpp.o: ../Entity.h
+CMakeFiles/roadfighter_sfml.dir/PlayerCar.cpp.o: ../PlayerCar.cpp
+CMakeFiles/roadfighter_sfml.dir/PlayerCar.cpp.o: ../PlayerCar.h
 
-CMakeFiles/roadfighter_sfml.dir/main.cpp.o: ../Car.h
+CMakeFiles/roadfighter_sfml.dir/PlayerCarSFML.cpp.o: ../Car.h
+CMakeFiles/roadfighter_sfml.dir/PlayerCarSFML.cpp.o: ../Entity.h
+CMakeFiles/roadfighter_sfml.dir/PlayerCarSFML.cpp.o: ../PlayerCar.h
+CMakeFiles/roadfighter_sfml.dir/PlayerCarSFML.cpp.o: ../PlayerCarSFML.cpp
+CMakeFiles/roadfighter_sfml.dir/PlayerCarSFML.cpp.o: ../PlayerCarSFML.h
+
+CMakeFiles/roadfighter_sfml.dir/World.cpp.o: ../Collider.h
+CMakeFiles/roadfighter_sfml.dir/World.cpp.o: ../Entity.h
+CMakeFiles/roadfighter_sfml.dir/World.cpp.o: ../World.cpp
+CMakeFiles/roadfighter_sfml.dir/World.cpp.o: ../World.h
+
+CMakeFiles/roadfighter_sfml.dir/main.cpp.o: ../Entity.h
 CMakeFiles/roadfighter_sfml.dir/main.cpp.o: ../Game.h
-CMakeFiles/roadfighter_sfml.dir/main.cpp.o: ../fig.h
+CMakeFiles/roadfighter_sfml.dir/main.cpp.o: ../World.h
 CMakeFiles/roadfighter_sfml.dir/main.cpp.o: ../main.cpp
-CMakeFiles/roadfighter_sfml.dir/main.cpp.o: ../sfml.h
-CMakeFiles/roadfighter_sfml.dir/main.cpp.o: ../world.h
-
-CMakeFiles/roadfighter_sfml.dir/sfml.cpp.o: ../Game.h
-CMakeFiles/roadfighter_sfml.dir/sfml.cpp.o: ../sfml.cpp
-CMakeFiles/roadfighter_sfml.dir/sfml.cpp.o: ../sfml.h
-
-CMakeFiles/roadfighter_sfml.dir/world.cpp.o: ../Car.h
-CMakeFiles/roadfighter_sfml.dir/world.cpp.o: ../Game.h
-CMakeFiles/roadfighter_sfml.dir/world.cpp.o: ../Player.h
-CMakeFiles/roadfighter_sfml.dir/world.cpp.o: ../world.cpp
-CMakeFiles/roadfighter_sfml.dir/world.cpp.o: ../world.h
 

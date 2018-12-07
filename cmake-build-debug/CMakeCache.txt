@@ -194,9 +194,6 @@ ProcessorCount_cmd_getconf:FILEPATH=/usr/bin/getconf
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/sbin/sysctl
 
-//The directory containing a CMake configuration file for SFML.
-SFML_DIR:PATH=SFML_DIR-NOTFOUND
-
 //Path to a library.
 SFML_GRAPHICS_LIBRARY_DYNAMIC_DEBUG:FILEPATH=SFML_GRAPHICS_LIBRARY_DYNAMIC_DEBUG-NOTFOUND
 
@@ -235,12 +232,6 @@ SFML_WINDOW_LIBRARY_STATIC_DEBUG:FILEPATH=SFML_WINDOW_LIBRARY_STATIC_DEBUG-NOTFO
 
 //Path to a library.
 SFML_WINDOW_LIBRARY_STATIC_RELEASE:FILEPATH=SFML_WINDOW_LIBRARY_STATIC_RELEASE-NOTFOUND
-
-//Value Computed by CMake
-game_BINARY_DIR:STATIC=/home/nick/Desktop/roadfighter/cmake-build-debug
-
-//Value Computed by CMake
-game_SOURCE_DIR:STATIC=/home/nick/Desktop/roadfighter
 
 //Value Computed by CMake
 roadfighter_BINARY_DIR:STATIC=/home/nick/Desktop/roadfighter/cmake-build-debug

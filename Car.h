@@ -1,31 +1,20 @@
 //
-// Created by nick on 20.11.18.
+// Created by nick on 04.12.18.
 //
 
 #ifndef ROADFIGHTER_CAR_H
 #define ROADFIGHTER_CAR_H
 
 
-#include <vector>
+#include "Entity.h"
 
-class Car {
+class Car: public Entity {
 public:
+    virtual ~Car();
+
     Car();
 
-    virtual ~Car();
-    std::vector<float> getSize(){
-        return size;
-    }
-    std::vector<float> getPos(){
-        return position;
-    }
-    std::vector<float> getColor(){
-        return Color;
-    }
-protected:
-    std::vector<float> size;
-    std::vector<float> position;
-    std::vector<float> Color;
+
 };
 
 

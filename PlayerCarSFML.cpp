@@ -1,0 +1,44 @@
+//
+// Created by nick on 05.12.18.
+//
+
+#include "PlayerCarSFML.h"
+
+PlayerCarSFML::PlayerCarSFML(sf::Texture* tex, sf::Vector2f s, sf::Vector2f pos, sf::RenderWindow &window, float maxsp)
+        : window(window) {
+    body.setSize(s);
+    body.setTexture(tex);
+    body.setPosition(pos);
+    body.setOrigin(s/2.0f);
+    position.x = pos.x;
+    position.y = pos.y;
+    totaltime = 0;
+    this->maxspeed = maxsp;
+    speed.x = 0;
+    speed.y = 0;
+    size.x = s.x;
+    size.y = s.y;
+}
+
+PlayerCarSFML::~PlayerCarSFML() {
+
+}
+
+void PlayerCarSFML::render() {
+    window.draw(body);
+}
+
+void PlayerCarSFML::update() {
+    body.setPosition(position.x, position.y);
+}
+
+std::vector<bool> PlayerCarSFML::getInput() {
+    std::vector<bool> input = {};
+
+    input.push_back(sf::Keyboard::isKeyPressed(sf::Keyboard::Left));
+    input.push_back(sf::Keyboard::isKeyPressed(sf::Keyboard::Right));
+    input.push_back(sf::Keyboard::isKeyPressed(sf::Keyboard::Up));
+    input.push_back(sf::Keyboard::isKeyPressed(sf::Keyboard::Down));
+    return input;
+}
+

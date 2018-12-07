@@ -209,6 +209,114 @@ Car.cpp.s:
 	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/Car.cpp.s
 .PHONY : Car.cpp.s
 
+CarSFML.o: CarSFML.cpp.o
+
+.PHONY : CarSFML.o
+
+# target to build an object file
+CarSFML.cpp.o:
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/CarSFML.cpp.o
+.PHONY : CarSFML.cpp.o
+
+CarSFML.i: CarSFML.cpp.i
+
+.PHONY : CarSFML.i
+
+# target to preprocess a source file
+CarSFML.cpp.i:
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/CarSFML.cpp.i
+.PHONY : CarSFML.cpp.i
+
+CarSFML.s: CarSFML.cpp.s
+
+.PHONY : CarSFML.s
+
+# target to generate assembly for a file
+CarSFML.cpp.s:
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/CarSFML.cpp.s
+.PHONY : CarSFML.cpp.s
+
+Collider.o: Collider.cpp.o
+
+.PHONY : Collider.o
+
+# target to build an object file
+Collider.cpp.o:
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/Collider.cpp.o
+.PHONY : Collider.cpp.o
+
+Collider.i: Collider.cpp.i
+
+.PHONY : Collider.i
+
+# target to preprocess a source file
+Collider.cpp.i:
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/Collider.cpp.i
+.PHONY : Collider.cpp.i
+
+Collider.s: Collider.cpp.s
+
+.PHONY : Collider.s
+
+# target to generate assembly for a file
+Collider.cpp.s:
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/Collider.cpp.s
+.PHONY : Collider.cpp.s
+
+EnemyCar.o: EnemyCar.cpp.o
+
+.PHONY : EnemyCar.o
+
+# target to build an object file
+EnemyCar.cpp.o:
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/EnemyCar.cpp.o
+.PHONY : EnemyCar.cpp.o
+
+EnemyCar.i: EnemyCar.cpp.i
+
+.PHONY : EnemyCar.i
+
+# target to preprocess a source file
+EnemyCar.cpp.i:
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/EnemyCar.cpp.i
+.PHONY : EnemyCar.cpp.i
+
+EnemyCar.s: EnemyCar.cpp.s
+
+.PHONY : EnemyCar.s
+
+# target to generate assembly for a file
+EnemyCar.cpp.s:
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/EnemyCar.cpp.s
+.PHONY : EnemyCar.cpp.s
+
+Entity.o: Entity.cpp.o
+
+.PHONY : Entity.o
+
+# target to build an object file
+Entity.cpp.o:
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/Entity.cpp.o
+.PHONY : Entity.cpp.o
+
+Entity.i: Entity.cpp.i
+
+.PHONY : Entity.i
+
+# target to preprocess a source file
+Entity.cpp.i:
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/Entity.cpp.i
+.PHONY : Entity.cpp.i
+
+Entity.s: Entity.cpp.s
+
+.PHONY : Entity.s
+
+# target to generate assembly for a file
+Entity.cpp.s:
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/Entity.cpp.s
+.PHONY : Entity.cpp.s
+
 Game.o: Game.cpp.o
 
 .PHONY : Game.o
@@ -263,32 +371,86 @@ Player.cpp.s:
 	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/Player.cpp.s
 .PHONY : Player.cpp.s
 
-fig.o: fig.cpp.o
+PlayerCar.o: PlayerCar.cpp.o
 
-.PHONY : fig.o
+.PHONY : PlayerCar.o
 
 # target to build an object file
-fig.cpp.o:
-	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/fig.cpp.o
-.PHONY : fig.cpp.o
+PlayerCar.cpp.o:
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/PlayerCar.cpp.o
+.PHONY : PlayerCar.cpp.o
 
-fig.i: fig.cpp.i
+PlayerCar.i: PlayerCar.cpp.i
 
-.PHONY : fig.i
+.PHONY : PlayerCar.i
 
 # target to preprocess a source file
-fig.cpp.i:
-	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/fig.cpp.i
-.PHONY : fig.cpp.i
+PlayerCar.cpp.i:
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/PlayerCar.cpp.i
+.PHONY : PlayerCar.cpp.i
 
-fig.s: fig.cpp.s
+PlayerCar.s: PlayerCar.cpp.s
 
-.PHONY : fig.s
+.PHONY : PlayerCar.s
 
 # target to generate assembly for a file
-fig.cpp.s:
-	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/fig.cpp.s
-.PHONY : fig.cpp.s
+PlayerCar.cpp.s:
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/PlayerCar.cpp.s
+.PHONY : PlayerCar.cpp.s
+
+PlayerCarSFML.o: PlayerCarSFML.cpp.o
+
+.PHONY : PlayerCarSFML.o
+
+# target to build an object file
+PlayerCarSFML.cpp.o:
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/PlayerCarSFML.cpp.o
+.PHONY : PlayerCarSFML.cpp.o
+
+PlayerCarSFML.i: PlayerCarSFML.cpp.i
+
+.PHONY : PlayerCarSFML.i
+
+# target to preprocess a source file
+PlayerCarSFML.cpp.i:
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/PlayerCarSFML.cpp.i
+.PHONY : PlayerCarSFML.cpp.i
+
+PlayerCarSFML.s: PlayerCarSFML.cpp.s
+
+.PHONY : PlayerCarSFML.s
+
+# target to generate assembly for a file
+PlayerCarSFML.cpp.s:
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/PlayerCarSFML.cpp.s
+.PHONY : PlayerCarSFML.cpp.s
+
+World.o: World.cpp.o
+
+.PHONY : World.o
+
+# target to build an object file
+World.cpp.o:
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/World.cpp.o
+.PHONY : World.cpp.o
+
+World.i: World.cpp.i
+
+.PHONY : World.i
+
+# target to preprocess a source file
+World.cpp.i:
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/World.cpp.i
+.PHONY : World.cpp.i
+
+World.s: World.cpp.s
+
+.PHONY : World.s
+
+# target to generate assembly for a file
+World.cpp.s:
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/World.cpp.s
+.PHONY : World.cpp.s
 
 main.o: main.cpp.o
 
@@ -320,60 +482,6 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/roadfighter.dir/build.make CMakeFiles/roadfighter.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-sfml.o: sfml.cpp.o
-
-.PHONY : sfml.o
-
-# target to build an object file
-sfml.cpp.o:
-	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/sfml.cpp.o
-.PHONY : sfml.cpp.o
-
-sfml.i: sfml.cpp.i
-
-.PHONY : sfml.i
-
-# target to preprocess a source file
-sfml.cpp.i:
-	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/sfml.cpp.i
-.PHONY : sfml.cpp.i
-
-sfml.s: sfml.cpp.s
-
-.PHONY : sfml.s
-
-# target to generate assembly for a file
-sfml.cpp.s:
-	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/sfml.cpp.s
-.PHONY : sfml.cpp.s
-
-world.o: world.cpp.o
-
-.PHONY : world.o
-
-# target to build an object file
-world.cpp.o:
-	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/world.cpp.o
-.PHONY : world.cpp.o
-
-world.i: world.cpp.i
-
-.PHONY : world.i
-
-# target to preprocess a source file
-world.cpp.i:
-	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/world.cpp.i
-.PHONY : world.cpp.i
-
-world.s: world.cpp.s
-
-.PHONY : world.s
-
-# target to generate assembly for a file
-world.cpp.s:
-	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/world.cpp.s
-.PHONY : world.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -391,24 +499,36 @@ help:
 	@echo "... Car.o"
 	@echo "... Car.i"
 	@echo "... Car.s"
+	@echo "... CarSFML.o"
+	@echo "... CarSFML.i"
+	@echo "... CarSFML.s"
+	@echo "... Collider.o"
+	@echo "... Collider.i"
+	@echo "... Collider.s"
+	@echo "... EnemyCar.o"
+	@echo "... EnemyCar.i"
+	@echo "... EnemyCar.s"
+	@echo "... Entity.o"
+	@echo "... Entity.i"
+	@echo "... Entity.s"
 	@echo "... Game.o"
 	@echo "... Game.i"
 	@echo "... Game.s"
 	@echo "... Player.o"
 	@echo "... Player.i"
 	@echo "... Player.s"
-	@echo "... fig.o"
-	@echo "... fig.i"
-	@echo "... fig.s"
+	@echo "... PlayerCar.o"
+	@echo "... PlayerCar.i"
+	@echo "... PlayerCar.s"
+	@echo "... PlayerCarSFML.o"
+	@echo "... PlayerCarSFML.i"
+	@echo "... PlayerCarSFML.s"
+	@echo "... World.o"
+	@echo "... World.i"
+	@echo "... World.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... sfml.o"
-	@echo "... sfml.i"
-	@echo "... sfml.s"
-	@echo "... world.o"
-	@echo "... world.i"
-	@echo "... world.s"
 .PHONY : help
 
 
