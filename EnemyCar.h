@@ -14,7 +14,7 @@ public:
     EnemyCar() = default;
     ~EnemyCar() = default;
     virtual void render() = 0;
-    void goDown();
+    void goDown(float deltatime);
 
 
 protected:

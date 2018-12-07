@@ -18,7 +18,6 @@ public:
     float getSpeed();
 
 protected:
-    float maxspeed;
     float totaltime;
 
     unsigned int row;

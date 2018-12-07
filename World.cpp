@@ -32,10 +32,10 @@ void World::Collision() {
         for (int i = 0; i < entityList.size() - 1; i++) {
             for (int j = i + 1; j < entityList.size(); j++) {
                 if (i != j) {
-                    Collider col = Collider(entityList[i]);
+                    Collider col(entityList[i]);
                     Collider col2(entityList[j]);
                     if(col.CheckCollision(col2, 1.0f)){
-                        col.OnCollision(col.getPosition());
+                        entityList[i]->OnCollision(entityList[i]->getHit(), entityList[j]->getSpeed(), entityList[j]->getHardness());
                     }
                 }
             }

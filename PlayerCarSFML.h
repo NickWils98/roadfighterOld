@@ -11,7 +11,7 @@
 
 class PlayerCarSFML: public PlayerCar {
 public:
-    PlayerCarSFML(sf::Texture* tex, sf::Vector2f size, sf::Vector2f position, sf::RenderWindow& window, float speed);
+    PlayerCarSFML(sf::Texture* tex, sf::Vector2f size, sf::Vector2f position, sf::RenderWindow& window, float maxsp, float acceler);
 
     virtual ~PlayerCarSFML();
     void update();

@@ -23,24 +23,47 @@ void Entity::setPosition(float x, float y) {
 
 }
 
-Entity::coordinats Entity::getSpeed() const {
+Entity::coordinats& Entity::getSpeed() {
     return speed;
 }
 
-void Entity::OnCollision(coordinats direction) {
+void Entity::OnCollision(coordinats direction, coordinats& sp, const coordinats hard) {
     if(direction.x < 0.0f){
         //Collision on the left.
-        speed.x = 0.0f;
+        speed.x = speed.x*hard.x;
     } else if(direction.x > 0.0f){
         //Collision on the right.
-        speed.x = 0.0f;
+        speed.x = speed.x*hard.x;
     }
     if(direction.y < 0.0f){
-        //Collision on the bottom.
-        speed.y = 0.0f;
-    } else if(direction.y > 0.0f){
         //Collision on the top.
-        speed.y = 0.0f;
+        float diff = speed.y+sp.y;
+        if(hardness.y<hard.y) {
+            speed.y = diff *(hard.y-hardness.y)/2;
+            sp.y = diff/2;
+        } else if(hardness.y> hard.y) {
+            sp.y = diff *(hardness.y-hard.y)/2;
+            speed.y = diff/2;
+        } else{
+            sp.y = diff /2;
+            speed.y = diff*0.9/2;
+        }
+
+
+
+    } else if(direction.y > 0.0f){
+        //Collision on the bottom.
+        float diff = speed.y+sp.y;
+        if(hardness.y>hard.y) {
+            speed.y = diff *(hard.y-hardness.y)/2;
+            sp.y = diff/2;
+        } else if(hardness.y< hard.y) {
+            sp.y = diff *(hardness.y-hard.y)/2;
+            speed.y = diff/2;
+        } else{
+            sp.y = diff *0.9/2;
+            speed.y = diff/2;
+        }
     }
 }
 
@@ -49,4 +72,17 @@ void Entity::OnCollision(coordinats direction) {
 Entity::Entity()
 {
 
+}
+
+const Entity::coordinats &Entity::getHit() const {
+    return hit;
+}
+
+void Entity::setHit(const float x, const float y) {
+    hit.x = x;
+    hit.y = y;
+}
+
+const Entity::coordinats &Entity::getHardness() const {
+    return hardness;
 }

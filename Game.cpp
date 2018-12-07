@@ -15,7 +15,7 @@ Game::Game()
             view(m_window.getDefaultView())
 {
 
-    //m_window.setFramerateLimit(1600);
+    m_window.setFramerateLimit(60);
     world = std::make_shared<World>();
 
     }
@@ -34,9 +34,10 @@ void Game::run() {
     textureCar2.loadFromFile("../car2.JPG");
 
     //world->init();
-    std::shared_ptr<CarSFML> enemy = std::make_shared<CarSFML>(&textureCar2, sf::Vector2f(20.0f, 30.0f), sf::Vector2f(310.0f, 320.0f), m_window, 0.20);
 
-    std::shared_ptr<PlayerCar> player = std::make_shared<PlayerCarSFML>(&textureCar, sf::Vector2f(20.0f, 35.0f), sf::Vector2f(200.0f, 320.0f), m_window, 1);
+    std::shared_ptr<PlayerCar> player = std::make_shared<PlayerCarSFML>(&textureCar, sf::Vector2f(20.0f, 35.0f), sf::Vector2f(200.0f, 320.0f), m_window, 500, 5);
+    std::shared_ptr<CarSFML> enemy = std::make_shared<CarSFML>(&textureCar2, sf::Vector2f(20.0f, 30.0f), sf::Vector2f(310.0f, 320.0f), m_window, 100, 4);
+
     world->add(player);
     world->add(enemy);
     sf::Texture texture;
@@ -60,7 +61,7 @@ void Game::run() {
         std::vector<bool> input = player->getInput();
         player->Update(deltaTime, input);
 
-        enemy->goDown();
+        enemy->goDown(deltaTime);
         world->update();
         world->Collision();
         view.move(0,player->getSpeed());
@@ -87,13 +88,13 @@ void Game::run() {
         //Handle window events
         handleEvent();
 
-        if(player->getPosition().y<-9000){
-            winner = true;
-            break;
-        }
-        if(enemy->getPosition().y <-9000){
-            break;
-        }
+//        if(player->getPosition().y<-9000){
+//            winner = true;
+//            break;
+//        }
+//        if(enemy->getPosition().y <-9000){
+//            break;
+//        }
 
     }
     m_window.clear();

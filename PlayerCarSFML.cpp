@@ -4,7 +4,7 @@
 
 #include "PlayerCarSFML.h"
 
-PlayerCarSFML::PlayerCarSFML(sf::Texture* tex, sf::Vector2f s, sf::Vector2f pos, sf::RenderWindow &window, float maxsp)
+PlayerCarSFML::PlayerCarSFML(sf::Texture* tex, sf::Vector2f s, sf::Vector2f pos, sf::RenderWindow &window, float maxsp, float acceler)
         : window(window) {
     body.setSize(s);
     body.setTexture(tex);
@@ -14,6 +14,11 @@ PlayerCarSFML::PlayerCarSFML(sf::Texture* tex, sf::Vector2f s, sf::Vector2f pos,
     position.y = pos.y;
     totaltime = 0;
     this->maxspeed = maxsp;
+    this->acceler = acceler;
+    hardness.x = 0.2;
+    hardness.y = 0.8;
+
+
     speed.x = 0;
     speed.y = 0;
     size.x = s.x;

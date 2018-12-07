@@ -12,11 +12,11 @@ void PlayerCar::Update(float deltaTime, std::vector<bool> input) {
 //    y *= 0.5f;
 
     if(!input[0] and !input[1]){
-        if (speed.x>0.001){
-            speed.x -=0.00002;
+        if (speed.x>1){
+            speed.x -= deltaTime*10;
         }
-        else if (speed.x<-0.001){
-            speed.x+=0.00002;
+        else if (speed.x<-1){
+            speed.x+=deltaTime*10;
         }
         else{
             speed.x = 0;
@@ -24,10 +24,10 @@ void PlayerCar::Update(float deltaTime, std::vector<bool> input) {
     }
     if(!input[2] and !input[3]){
         if (speed.y >0.001){
-            speed.y-=0.00002;
+            speed.y-=deltaTime*3;
         }
-        else if (speed.y<-0.001){
-            speed.y +=0.00002;
+        else if (speed.y<-1){
+            speed.y +=deltaTime*3;
         }
         else{
             speed.y = 0;
@@ -35,9 +35,9 @@ void PlayerCar::Update(float deltaTime, std::vector<bool> input) {
     }
     if(input[0]){
         if(speed.x>0){
-            speed.x -= 0.001;
+            speed.x -= acceler*deltaTime*20;
         }else {
-            speed.x -= 0.0001;
+            speed.x -= acceler*deltaTime;
         }
         if(-maxspeed>speed.x){
             speed.x = -maxspeed;
@@ -45,9 +45,9 @@ void PlayerCar::Update(float deltaTime, std::vector<bool> input) {
     }
     if(input[1]){
         if(speed.x<0){
-            speed.x+= 0.001;
+            speed.x+= acceler*deltaTime*20;
         }else {
-            speed.x += 0.0001;
+            speed.x += acceler*deltaTime;
         }
         if(maxspeed<speed.x){
             speed.x = maxspeed;
@@ -56,9 +56,9 @@ void PlayerCar::Update(float deltaTime, std::vector<bool> input) {
 
     if(input[2]){
         if(speed.y>0){
-            speed.y -= 0.001;
+            speed.y -= acceler*deltaTime*20;
         }else {
-            speed.y -= 0.0001;
+            speed.y -= acceler*deltaTime;
         }
         if(-maxspeed>speed.y){
             speed.y = -maxspeed;
@@ -66,9 +66,9 @@ void PlayerCar::Update(float deltaTime, std::vector<bool> input) {
     }
     if(input[3]) {
         if(speed.y<0){
-            speed.y += 0.001;
+            speed.y += acceler*deltaTime*20;
         }else {
-            speed.y += 0.0001;
+            speed.y += acceler*deltaTime;
         }
         if (maxspeed < speed.y) {
             speed.y = maxspeed;
@@ -76,7 +76,7 @@ void PlayerCar::Update(float deltaTime, std::vector<bool> input) {
     }
     position.x += speed.x;
     position.y += speed.y;
-    std::cout<<position.x<<"     "<<position.y<<"    "<<speed.y<<std::endl;
+    std::cout<<speed.x<<"     "<<speed.y<<"    "<<deltaTime<<std::endl;
 }
 
 

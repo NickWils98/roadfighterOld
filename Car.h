@@ -13,7 +13,8 @@ public:
     virtual ~Car();
 
     Car();
-
+    float acceler;
+    float maxspeed;
 
 };
 

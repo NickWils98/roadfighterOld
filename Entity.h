@@ -6,7 +6,7 @@
 #define ROADFIGHTER_ENTITY_H
 
 #include <memory>
-
+#include <cmath>
 class Entity {
 public:
     Entity();
@@ -24,18 +24,30 @@ public:
 
 protected:
 
+    coordinats hit;
+public:
+    void setHit(const float x, const float y);
+
+public:
+    const coordinats &getHit() const;
+
+protected:
     coordinats size;
     coordinats speed;
     coordinats position;
+    coordinats hardness;
+public:
+    const coordinats &getHardness() const;
+
 public:
     const coordinats getSize() const;
     coordinats getPosition() const;
-    coordinats getSpeed() const;
+    coordinats& getSpeed();
 
     void setPosition(const coordinats& posistion);
     void setPosition(float x, float y);
 
-    void OnCollision(coordinats direction);
+    void OnCollision(coordinats direction, coordinats& sp, const coordinats hard);
 
 };
 

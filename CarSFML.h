@@ -10,7 +10,7 @@
 
 class CarSFML: public EnemyCar {
 public:
-    CarSFML(sf::Texture* tex, sf::Vector2f size, sf::Vector2f position, sf::RenderWindow& window, float speed);
+    CarSFML(sf::Texture* tex, sf::Vector2f size, sf::Vector2f position, sf::RenderWindow& window, float speed, float accel);
 
     virtual ~CarSFML();
     void update();
