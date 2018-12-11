@@ -42,3 +42,10 @@ void World::Collision() {
         }
     }
 }
+
+void World::WallCollision() {
+    for(auto obj : entityList){
+        obj->WallCollision();
+    }
+
+}

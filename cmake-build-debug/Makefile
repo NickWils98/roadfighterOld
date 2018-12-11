@@ -425,6 +425,33 @@ PlayerCarSFML.cpp.s:
 	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/PlayerCarSFML.cpp.s
 .PHONY : PlayerCarSFML.cpp.s
 
+RoadBarrier.o: RoadBarrier.cpp.o
+
+.PHONY : RoadBarrier.o
+
+# target to build an object file
+RoadBarrier.cpp.o:
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/RoadBarrier.cpp.o
+.PHONY : RoadBarrier.cpp.o
+
+RoadBarrier.i: RoadBarrier.cpp.i
+
+.PHONY : RoadBarrier.i
+
+# target to preprocess a source file
+RoadBarrier.cpp.i:
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/RoadBarrier.cpp.i
+.PHONY : RoadBarrier.cpp.i
+
+RoadBarrier.s: RoadBarrier.cpp.s
+
+.PHONY : RoadBarrier.s
+
+# target to generate assembly for a file
+RoadBarrier.cpp.s:
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/RoadBarrier.cpp.s
+.PHONY : RoadBarrier.cpp.s
+
 World.o: World.cpp.o
 
 .PHONY : World.o
@@ -523,6 +550,9 @@ help:
 	@echo "... PlayerCarSFML.o"
 	@echo "... PlayerCarSFML.i"
 	@echo "... PlayerCarSFML.s"
+	@echo "... RoadBarrier.o"
+	@echo "... RoadBarrier.i"
+	@echo "... RoadBarrier.s"
 	@echo "... World.o"
 	@echo "... World.i"
 	@echo "... World.s"

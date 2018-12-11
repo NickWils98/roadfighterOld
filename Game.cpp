@@ -2,13 +2,9 @@
 // Created by nick on 01.12.18.
 //
 
+#include <iostream>
 #include "Game.h"
-#include "Car.h"
-#include "EnemyCar.h"
-#include "CarSFML.h"
-#include "PlayerCar.h"
 #include "PlayerCarSFML.h"
-
 
 Game::Game()
         :   m_window    (sf::VideoMode(514, 431), "ROADFIGHTER",  sf::Style::Close | sf::Style::Resize),
@@ -28,27 +24,9 @@ void Game::run() {
 
     sf::Clock timer;
     float deltaTime;
-    sf::Texture textureCar;
-    textureCar.loadFromFile("../car1.PNG");
-    sf::Texture textureCar2;
-    textureCar2.loadFromFile("../car2.JPG");
 
-    //world->init();
+    Game::init();
 
-    std::shared_ptr<PlayerCar> player = std::make_shared<PlayerCarSFML>(&textureCar, sf::Vector2f(20.0f, 35.0f), sf::Vector2f(200.0f, 320.0f), m_window, 500, 5);
-    std::shared_ptr<CarSFML> enemy = std::make_shared<CarSFML>(&textureCar2, sf::Vector2f(20.0f, 30.0f), sf::Vector2f(310.0f, 320.0f), m_window, 100, 4);
-
-    world->add(player);
-    world->add(enemy);
-    sf::Texture texture;
-    texture.loadFromFile("../car_game.jpg");
-    sf::Sprite background(texture);
-    sf::Sprite background2(texture);
-    sf::Sprite background3(texture);
-
-    background.setPosition(0 ,0);
-    background2.setPosition(0 ,-431);
-    background3.setPosition(0 ,-862);
     bool winner = false;
     //Main loop of the game
     while (m_window.isOpen()) {
@@ -58,30 +36,30 @@ void Game::run() {
             deltaTime= 1.0f/20.0f;
         }
 
+        float old = player->getPosition().y;
         std::vector<bool> input = player->getInput();
         player->Update(deltaTime, input);
-
-        enemy->goDown(deltaTime);
+        for(auto e : enemys){
+            e->goDown(deltaTime);
+        }
         world->update();
         world->Collision();
-        view.move(0,player->getSpeed());
-        if(background.getPosition().y> player->getPosition().y+431){
-            background.setPosition(0, background.getPosition().y-1293);
+        world->WallCollision();
+        PlayerCar* pl = player.get();
+        // vieuw
+        float newpos = player->getPosition().y;
+        if(old>newpos){
+            view.move(0, -fabsf((fabsf(old)-fabsf(newpos))));
+        } else {
+            view.move(0, fabsf(fabsf(old) - fabsf(newpos)));
         }
-        if(background2.getPosition().y> player->getPosition().y+431){
-            background2.setPosition(0, background2.getPosition().y-1293);
-        }
-        if(background3.getPosition().y> player->getPosition().y+431){
-            background3.setPosition(0, background3.getPosition().y-1293);
-        }
-//        background.setPosition(0,player->getSpeed()+background.getPosition().y);
 
         //Render
         m_window.clear();
         m_window.setView(view);
-        m_window.draw(background);
-        m_window.draw(background2);
-        m_window.draw(background3);
+        // background
+        DrawBackground();
+
         world->render();
         m_window.display();
 
@@ -106,7 +84,7 @@ void Game::run() {
         m_window.draw(winner);
     } else {
         sf::Texture texture;
-        texture.loadFromFile("../loser.jpg");
+        texture.loadFromFile("../afb/loser.jpg");
         sf::Sprite loser(texture);
 
         loser.setPosition(0, player->getPosition().y-270);
@@ -133,6 +111,47 @@ void Game::handleEvent() {
 
         }
     }
+}
+
+void Game::init() {
+    std::shared_ptr<sf::Texture> textureCar = std::make_shared<sf::Texture>();
+    textureCar->loadFromFile("./../afb/car1.PNG");
+    textures.push_back(textureCar);
+    player = std::make_shared<PlayerCarSFML>(textureCar, sf::Vector2f(20.0f, 35.0f), sf::Vector2f(200.0f, 320.0f), m_window, 18, 2);
+
+
+    std::shared_ptr<sf::Texture> textureCar2 = std::make_shared<sf::Texture>();
+    textureCar2->loadFromFile("./../afb/car2.JPG");
+    textures.push_back(textureCar2);
+    enemys.push_back(std::make_shared<CarSFML>(textureCar2, sf::Vector2f(20.0f, 30.0f), sf::Vector2f(310, 320), m_window, 12, 3.0));
+    enemys.push_back(std::make_shared<CarSFML>(textureCar2, sf::Vector2f(20.0f, 30.0f), sf::Vector2f(310.0f, 240.0f), m_window, 11, 2.5));
+    enemys.push_back(std::make_shared<CarSFML>(textureCar2, sf::Vector2f(20.0f, 30.0f), sf::Vector2f(200, 240.0f), m_window, 14, 1.5));
+    enemys.push_back(std::make_shared<CarSFML>(textureCar2, sf::Vector2f(20.0f, 30.0f), sf::Vector2f(310.0f, 180.0f), m_window, 10, 1));
+    enemys.push_back(std::make_shared<CarSFML>(textureCar2, sf::Vector2f(20.0f, 30.0f), sf::Vector2f(200, 180.0f), m_window, 15, 3));
+
+    world->add(player);
+    for(auto e : enemys){
+        world->add(e);
+    }
+
+    std::shared_ptr<sf::Texture> backgr = std::make_shared<sf::Texture>();
+    backgr->loadFromFile("../afb/car_game.jpg");
+    textures.push_back(backgr);
+    sf::Sprite background(*backgr.get());
+    backgrounds.push_back(background);
+
+    background.setPosition(0 ,0);
+}
+
+void Game::DrawBackground() {
+    backgrounds[0].setPosition(0, (static_cast<int>(player->getPosition().y)/431-2)*431);
+    m_window.draw(backgrounds[0]);
+    backgrounds[0].setPosition(0, (static_cast<int>(player->getPosition().y)/431-1)*431);
+    m_window.draw(backgrounds[0]);
+    backgrounds[0].setPosition(0, (static_cast<int>(player->getPosition().y)/431)*431);
+    m_window.draw(backgrounds[0]);
+    backgrounds[0].setPosition(0, (static_cast<int>(player->getPosition().y)/431+1)*431);
+    m_window.draw(backgrounds[0]);
 }
 
 

@@ -53,15 +53,21 @@ void PlayerCar::Update(float deltaTime, std::vector<bool> input) {
             speed.x = maxspeed;
         }
     }
+    if(fabsf(speed.y>maxspeed)){
 
+        speed.y +=deltaTime*3;
+    }
     if(input[2]){
         if(speed.y>0){
             speed.y -= acceler*deltaTime*20;
         }else {
-            speed.y -= acceler*deltaTime;
-        }
-        if(-maxspeed>speed.y){
-            speed.y = -maxspeed;
+            if(fabsf(speed.y)>maxspeed){
+
+                speed.y +=deltaTime*3;
+            } else{
+
+                speed.y -= acceler*deltaTime;
+            }
         }
     }
     if(input[3]) {
@@ -76,7 +82,7 @@ void PlayerCar::Update(float deltaTime, std::vector<bool> input) {
     }
     position.x += speed.x;
     position.y += speed.y;
-    std::cout<<speed.x<<"     "<<speed.y<<"    "<<deltaTime<<std::endl;
+    //std::cout<<speed.x<<"     "<<speed.y<<"    "<<deltaTime<<std::endl;
 }
 
 

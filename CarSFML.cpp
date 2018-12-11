@@ -4,9 +4,9 @@
 
 #include "CarSFML.h"
 
-CarSFML::CarSFML(sf::Texture* tex, sf::Vector2f s, sf::Vector2f pos, sf::RenderWindow& window, float speed, float acccel) : window(window) {
+CarSFML::CarSFML(std::shared_ptr<sf::Texture> tex, sf::Vector2f s, sf::Vector2f pos, sf::RenderWindow& window, float speed, float acccel) : window(window) {
     body.setSize(s);
-    body.setTexture(tex);
+    body.setTexture(tex.get());
     body.setPosition(pos);
     body.setOrigin(s/2.0f);
     this->position.x = pos.x;

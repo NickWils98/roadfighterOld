@@ -86,3 +86,7 @@ void Collider::render() {
 void Collider::update() {
 
 }
+
+void Collider::WallCollision() {
+
+}

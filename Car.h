@@ -13,6 +13,8 @@ public:
     virtual ~Car();
 
     Car();
+
+    void WallCollision() override;
     float acceler;
     float maxspeed;
 

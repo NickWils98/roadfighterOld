@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/nick/Desktop/roadfighter/Player.cpp" "/home/nick/Desktop/roadfighter/cmake-build-debug/CMakeFiles/roadfighter_sfml.dir/Player.cpp.o"
   "/home/nick/Desktop/roadfighter/PlayerCar.cpp" "/home/nick/Desktop/roadfighter/cmake-build-debug/CMakeFiles/roadfighter_sfml.dir/PlayerCar.cpp.o"
   "/home/nick/Desktop/roadfighter/PlayerCarSFML.cpp" "/home/nick/Desktop/roadfighter/cmake-build-debug/CMakeFiles/roadfighter_sfml.dir/PlayerCarSFML.cpp.o"
+  "/home/nick/Desktop/roadfighter/RoadBarrier.cpp" "/home/nick/Desktop/roadfighter/cmake-build-debug/CMakeFiles/roadfighter_sfml.dir/RoadBarrier.cpp.o"
   "/home/nick/Desktop/roadfighter/World.cpp" "/home/nick/Desktop/roadfighter/cmake-build-debug/CMakeFiles/roadfighter_sfml.dir/World.cpp.o"
   "/home/nick/Desktop/roadfighter/main.cpp" "/home/nick/Desktop/roadfighter/cmake-build-debug/CMakeFiles/roadfighter_sfml.dir/main.cpp.o"
   )

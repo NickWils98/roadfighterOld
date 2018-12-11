@@ -11,16 +11,16 @@
 
 class PlayerCarSFML: public PlayerCar {
 public:
-    PlayerCarSFML(sf::Texture* tex, sf::Vector2f size, sf::Vector2f position, sf::RenderWindow& window, float maxsp, float acceler);
+    PlayerCarSFML(std::shared_ptr<sf::Texture> tex, sf::Vector2f size, sf::Vector2f position, sf::RenderWindow& window, float maxsp, float acceler);
 
     virtual ~PlayerCarSFML();
     void update();
     void render() override ;
     std::vector<bool> getInput() override ;
 
+    sf::RectangleShape body;
 
 private:
-    sf::RectangleShape body;
     sf::RenderWindow& window;
 };
 

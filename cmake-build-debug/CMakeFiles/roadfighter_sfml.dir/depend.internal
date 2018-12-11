@@ -47,13 +47,22 @@ CMakeFiles/roadfighter_sfml.dir/PlayerCarSFML.cpp.o
  /home/nick/Desktop/roadfighter/PlayerCar.h
  /home/nick/Desktop/roadfighter/PlayerCarSFML.cpp
  /home/nick/Desktop/roadfighter/PlayerCarSFML.h
+CMakeFiles/roadfighter_sfml.dir/RoadBarrier.cpp.o
+ /home/nick/Desktop/roadfighter/Entity.h
+ /home/nick/Desktop/roadfighter/RoadBarrier.cpp
+ /home/nick/Desktop/roadfighter/RoadBarrier.h
 CMakeFiles/roadfighter_sfml.dir/World.cpp.o
  /home/nick/Desktop/roadfighter/Collider.h
  /home/nick/Desktop/roadfighter/Entity.h
  /home/nick/Desktop/roadfighter/World.cpp
  /home/nick/Desktop/roadfighter/World.h
 CMakeFiles/roadfighter_sfml.dir/main.cpp.o
+ /home/nick/Desktop/roadfighter/Car.h
+ /home/nick/Desktop/roadfighter/CarSFML.h
+ /home/nick/Desktop/roadfighter/EnemyCar.h
  /home/nick/Desktop/roadfighter/Entity.h
  /home/nick/Desktop/roadfighter/Game.h
+ /home/nick/Desktop/roadfighter/PlayerCar.h
+ /home/nick/Desktop/roadfighter/PlayerCarSFML.h
  /home/nick/Desktop/roadfighter/World.h
  /home/nick/Desktop/roadfighter/main.cpp

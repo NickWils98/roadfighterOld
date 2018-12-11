@@ -7,6 +7,8 @@
 #IncludeRegexTransform: 
 
 /home/nick/Desktop/roadfighter/Car.cpp
+iostream
+-
 Car.h
 /home/nick/Desktop/roadfighter/Car.h
 
@@ -39,6 +41,8 @@ Entity.h
 /home/nick/Desktop/roadfighter/Entity.h
 
 /home/nick/Desktop/roadfighter/EnemyCar.cpp
+iostream
+-
 EnemyCar.h
 /home/nick/Desktop/roadfighter/EnemyCar.h
 
@@ -55,18 +59,14 @@ Entity.h
 /home/nick/Desktop/roadfighter/Entity.h
 memory
 -
+cmath
+-
 
 /home/nick/Desktop/roadfighter/Game.cpp
+iostream
+-
 Game.h
 /home/nick/Desktop/roadfighter/Game.h
-Car.h
-/home/nick/Desktop/roadfighter/Car.h
-EnemyCar.h
-/home/nick/Desktop/roadfighter/EnemyCar.h
-CarSFML.h
-/home/nick/Desktop/roadfighter/CarSFML.h
-PlayerCar.h
-/home/nick/Desktop/roadfighter/PlayerCar.h
 PlayerCarSFML.h
 /home/nick/Desktop/roadfighter/PlayerCarSFML.h
 
@@ -77,6 +77,20 @@ Entity.h
 /home/nick/Desktop/roadfighter/Entity.h
 World.h
 /home/nick/Desktop/roadfighter/World.h
+CarSFML.h
+/home/nick/Desktop/roadfighter/CarSFML.h
+PlayerCar.h
+/home/nick/Desktop/roadfighter/PlayerCar.h
+Car.h
+/home/nick/Desktop/roadfighter/Car.h
+EnemyCar.h
+/home/nick/Desktop/roadfighter/EnemyCar.h
+CarSFML.h
+/home/nick/Desktop/roadfighter/CarSFML.h
+PlayerCar.h
+/home/nick/Desktop/roadfighter/PlayerCar.h
+PlayerCarSFML.h
+/home/nick/Desktop/roadfighter/PlayerCarSFML.h
 memory
 -
 
@@ -110,6 +124,14 @@ SFML/Graphics.hpp
 PlayerCar.h
 /home/nick/Desktop/roadfighter/PlayerCar.h
 
+/home/nick/Desktop/roadfighter/RoadBarrier.cpp
+RoadBarrier.h
+/home/nick/Desktop/roadfighter/RoadBarrier.h
+
+/home/nick/Desktop/roadfighter/RoadBarrier.h
+Entity.h
+/home/nick/Desktop/roadfighter/Entity.h
+
 /home/nick/Desktop/roadfighter/World.cpp
 iostream
 -
@@ -129,8 +151,4 @@ iostream
 -
 Game.h
 /home/nick/Desktop/roadfighter/Game.h
-SFML/Graphics.hpp
--
-math.h
--
 

@@ -4,7 +4,6 @@ project(roadfighter)
 set(CMAKE_CXX_STANDARD 11)
 
 add_executable(roadfighter main.cpp)
-
 # Extend the CMake module path to find the FindSFML.cmake
 # file in {project root}/cmake/Modules
 SET(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${PROJECT_SOURCE_DIR}/cmake/Modules/")
@@ -13,7 +12,7 @@ SET(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${PROJECT_SOURCE_DIR}/cmake/Modules/
 FIND_PACKAGE(SFML 2 COMPONENTS system window graphics)
 
 # The source files to compile
-SET(SRC main.cpp Game.cpp Game.h Entity.cpp Entity.h World.cpp World.h Car.cpp Car.h EnemyCar.cpp EnemyCar.h Player.cpp Player.h CarSFML.cpp CarSFML.h PlayerCar.cpp PlayerCar.h PlayerCarSFML.cpp PlayerCarSFML.h Collider.cpp Collider.h)
+SET(SRC main.cpp Game.cpp Game.h Entity.cpp Entity.h World.cpp World.h Car.cpp Car.h EnemyCar.cpp EnemyCar.h Player.cpp Player.h CarSFML.cpp CarSFML.h PlayerCar.cpp PlayerCar.h PlayerCarSFML.cpp PlayerCarSFML.h Collider.cpp Collider.h RoadBarrier.cpp RoadBarrier.h)
 
 # Add include dirs for SFML
 # (The SFML_INCLUDE_DIR variable is defined by FindSFML.cmake, if SFML was found)

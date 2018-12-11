@@ -16,6 +16,8 @@ public:
 
     virtual void update() = 0;
 
+    virtual void WallCollision() =0;
+
 
     struct coordinats {
         float y = 0;

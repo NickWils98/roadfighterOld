@@ -224,6 +224,12 @@
 		<Unit filename="/home/nick/Desktop/roadfighter/PlayerCarSFML.h">
 			<Option target="roadfighter_sfml"/>
 		</Unit>
+		<Unit filename="/home/nick/Desktop/roadfighter/RoadBarrier.cpp">
+			<Option target="roadfighter_sfml"/>
+		</Unit>
+		<Unit filename="/home/nick/Desktop/roadfighter/RoadBarrier.h">
+			<Option target="roadfighter_sfml"/>
+		</Unit>
 		<Unit filename="/home/nick/Desktop/roadfighter/World.cpp">
 			<Option target="roadfighter_sfml"/>
 		</Unit>

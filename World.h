@@ -18,6 +18,7 @@ private:
 public:
     void add(std::shared_ptr<Entity> obj);
     void update();
+    void WallCollision();
     void remove();
     void render();
     void Collision();

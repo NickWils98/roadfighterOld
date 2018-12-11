@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/roadfighter_sfml.dir/PlayerCar.cpp.o"
   "CMakeFiles/roadfighter_sfml.dir/PlayerCarSFML.cpp.o"
   "CMakeFiles/roadfighter_sfml.dir/Collider.cpp.o"
+  "CMakeFiles/roadfighter_sfml.dir/RoadBarrier.cpp.o"
   "roadfighter_sfml.pdb"
   "roadfighter_sfml"
 )

@@ -22,6 +22,7 @@ public:
 
     virtual void update();
 
+    virtual void WallCollision();
 
 private:
     std::shared_ptr<Entity> object;
