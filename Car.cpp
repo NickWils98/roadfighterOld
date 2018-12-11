@@ -22,4 +22,9 @@ void Car::WallCollision() {
         speed.y/=1.01;
         speed.x=0;
     }
+    if(position.y+getSize().y/2>430){
+        position.y = 430 - getSize().y/2;
+        speed.y=0;
+        speed.x/=1.01;
+    }
 }

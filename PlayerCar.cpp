@@ -8,9 +8,6 @@
 
 void PlayerCar::Update(float deltaTime, std::vector<bool> input) {
 
-//    x *= 0.5f;
-//    y *= 0.5f;
-
     if(!input[0] and !input[1]){
         if (speed.x>1){
             speed.x -= deltaTime*10;

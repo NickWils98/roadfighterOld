@@ -48,7 +48,9 @@ void Game::run() {
         PlayerCar* pl = player.get();
         // vieuw
         float newpos = player->getPosition().y;
-        if(old>newpos){
+        if(player->getPosition().y > 320){
+
+        } else if(old>newpos){
             view.move(0, -fabsf((fabsf(old)-fabsf(newpos))));
         } else {
             view.move(0, fabsf(fabsf(old) - fabsf(newpos)));
@@ -140,18 +142,33 @@ void Game::init() {
     sf::Sprite background(*backgr.get());
     backgrounds.push_back(background);
 
-    background.setPosition(0 ,0);
+    background.setPosition(0 ,-431);
+
+    std::shared_ptr<sf::Texture> backgrstart = std::make_shared<sf::Texture>();
+    backgrstart->loadFromFile("../afb/start.jpg");
+    textures.push_back(backgrstart);
+    sf::Sprite background2(*backgrstart.get());
+    backgrounds.push_back(background2);
+
+    background2.setPosition(0 ,0);
+
 }
 
 void Game::DrawBackground() {
-    backgrounds[0].setPosition(0, (static_cast<int>(player->getPosition().y)/431-2)*431);
-    m_window.draw(backgrounds[0]);
-    backgrounds[0].setPosition(0, (static_cast<int>(player->getPosition().y)/431-1)*431);
-    m_window.draw(backgrounds[0]);
-    backgrounds[0].setPosition(0, (static_cast<int>(player->getPosition().y)/431)*431);
-    m_window.draw(backgrounds[0]);
-    backgrounds[0].setPosition(0, (static_cast<int>(player->getPosition().y)/431+1)*431);
-    m_window.draw(backgrounds[0]);
+    if(player->getPosition().y>=-431){
+        m_window.draw(backgrounds[1]);
+        backgrounds[0].setPosition(0, -431);
+        m_window.draw(backgrounds[0]);
+    } else {
+        backgrounds[0].setPosition(0, (static_cast<int>(player->getPosition().y) / 431 - 2) * 431);
+        m_window.draw(backgrounds[0]);
+        backgrounds[0].setPosition(0, (static_cast<int>(player->getPosition().y) / 431 - 1) * 431);
+        m_window.draw(backgrounds[0]);
+        backgrounds[0].setPosition(0, (static_cast<int>(player->getPosition().y) / 431) * 431);
+        m_window.draw(backgrounds[0]);
+        backgrounds[0].setPosition(0, (static_cast<int>(player->getPosition().y) / 431 + 1) * 431);
+        m_window.draw(backgrounds[0]);
+    }
 }
 
 
