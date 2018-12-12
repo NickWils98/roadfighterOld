@@ -182,6 +182,60 @@ roadfighter/fast:
 	$(MAKE) -f CMakeFiles/roadfighter.dir/build.make CMakeFiles/roadfighter.dir/build
 .PHONY : roadfighter/fast
 
+Bullet.o: Bullet.cpp.o
+
+.PHONY : Bullet.o
+
+# target to build an object file
+Bullet.cpp.o:
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/Bullet.cpp.o
+.PHONY : Bullet.cpp.o
+
+Bullet.i: Bullet.cpp.i
+
+.PHONY : Bullet.i
+
+# target to preprocess a source file
+Bullet.cpp.i:
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/Bullet.cpp.i
+.PHONY : Bullet.cpp.i
+
+Bullet.s: Bullet.cpp.s
+
+.PHONY : Bullet.s
+
+# target to generate assembly for a file
+Bullet.cpp.s:
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/Bullet.cpp.s
+.PHONY : Bullet.cpp.s
+
+BulletSFML.o: BulletSFML.cpp.o
+
+.PHONY : BulletSFML.o
+
+# target to build an object file
+BulletSFML.cpp.o:
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/BulletSFML.cpp.o
+.PHONY : BulletSFML.cpp.o
+
+BulletSFML.i: BulletSFML.cpp.i
+
+.PHONY : BulletSFML.i
+
+# target to preprocess a source file
+BulletSFML.cpp.i:
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/BulletSFML.cpp.i
+.PHONY : BulletSFML.cpp.i
+
+BulletSFML.s: BulletSFML.cpp.s
+
+.PHONY : BulletSFML.s
+
+# target to generate assembly for a file
+BulletSFML.cpp.s:
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/BulletSFML.cpp.s
+.PHONY : BulletSFML.cpp.s
+
 Car.o: Car.cpp.o
 
 .PHONY : Car.o
@@ -344,32 +398,59 @@ Game.cpp.s:
 	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/Game.cpp.s
 .PHONY : Game.cpp.s
 
-Player.o: Player.cpp.o
+PassingCar.o: PassingCar.cpp.o
 
-.PHONY : Player.o
+.PHONY : PassingCar.o
 
 # target to build an object file
-Player.cpp.o:
-	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/Player.cpp.o
-.PHONY : Player.cpp.o
+PassingCar.cpp.o:
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/PassingCar.cpp.o
+.PHONY : PassingCar.cpp.o
 
-Player.i: Player.cpp.i
+PassingCar.i: PassingCar.cpp.i
 
-.PHONY : Player.i
+.PHONY : PassingCar.i
 
 # target to preprocess a source file
-Player.cpp.i:
-	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/Player.cpp.i
-.PHONY : Player.cpp.i
+PassingCar.cpp.i:
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/PassingCar.cpp.i
+.PHONY : PassingCar.cpp.i
 
-Player.s: Player.cpp.s
+PassingCar.s: PassingCar.cpp.s
 
-.PHONY : Player.s
+.PHONY : PassingCar.s
 
 # target to generate assembly for a file
-Player.cpp.s:
-	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/Player.cpp.s
-.PHONY : Player.cpp.s
+PassingCar.cpp.s:
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/PassingCar.cpp.s
+.PHONY : PassingCar.cpp.s
+
+PassingCarSFML.o: PassingCarSFML.cpp.o
+
+.PHONY : PassingCarSFML.o
+
+# target to build an object file
+PassingCarSFML.cpp.o:
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/PassingCarSFML.cpp.o
+.PHONY : PassingCarSFML.cpp.o
+
+PassingCarSFML.i: PassingCarSFML.cpp.i
+
+.PHONY : PassingCarSFML.i
+
+# target to preprocess a source file
+PassingCarSFML.cpp.i:
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/PassingCarSFML.cpp.i
+.PHONY : PassingCarSFML.cpp.i
+
+PassingCarSFML.s: PassingCarSFML.cpp.s
+
+.PHONY : PassingCarSFML.s
+
+# target to generate assembly for a file
+PassingCarSFML.cpp.s:
+	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/PassingCarSFML.cpp.s
+.PHONY : PassingCarSFML.cpp.s
 
 PlayerCar.o: PlayerCar.cpp.o
 
@@ -424,33 +505,6 @@ PlayerCarSFML.s: PlayerCarSFML.cpp.s
 PlayerCarSFML.cpp.s:
 	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/PlayerCarSFML.cpp.s
 .PHONY : PlayerCarSFML.cpp.s
-
-RoadBarrier.o: RoadBarrier.cpp.o
-
-.PHONY : RoadBarrier.o
-
-# target to build an object file
-RoadBarrier.cpp.o:
-	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/RoadBarrier.cpp.o
-.PHONY : RoadBarrier.cpp.o
-
-RoadBarrier.i: RoadBarrier.cpp.i
-
-.PHONY : RoadBarrier.i
-
-# target to preprocess a source file
-RoadBarrier.cpp.i:
-	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/RoadBarrier.cpp.i
-.PHONY : RoadBarrier.cpp.i
-
-RoadBarrier.s: RoadBarrier.cpp.s
-
-.PHONY : RoadBarrier.s
-
-# target to generate assembly for a file
-RoadBarrier.cpp.s:
-	$(MAKE) -f CMakeFiles/roadfighter_sfml.dir/build.make CMakeFiles/roadfighter_sfml.dir/RoadBarrier.cpp.s
-.PHONY : RoadBarrier.cpp.s
 
 World.o: World.cpp.o
 
@@ -523,6 +577,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... roadfighter_sfml"
 	@echo "... roadfighter"
+	@echo "... Bullet.o"
+	@echo "... Bullet.i"
+	@echo "... Bullet.s"
+	@echo "... BulletSFML.o"
+	@echo "... BulletSFML.i"
+	@echo "... BulletSFML.s"
 	@echo "... Car.o"
 	@echo "... Car.i"
 	@echo "... Car.s"
@@ -541,18 +601,18 @@ help:
 	@echo "... Game.o"
 	@echo "... Game.i"
 	@echo "... Game.s"
-	@echo "... Player.o"
-	@echo "... Player.i"
-	@echo "... Player.s"
+	@echo "... PassingCar.o"
+	@echo "... PassingCar.i"
+	@echo "... PassingCar.s"
+	@echo "... PassingCarSFML.o"
+	@echo "... PassingCarSFML.i"
+	@echo "... PassingCarSFML.s"
 	@echo "... PlayerCar.o"
 	@echo "... PlayerCar.i"
 	@echo "... PlayerCar.s"
 	@echo "... PlayerCarSFML.o"
 	@echo "... PlayerCarSFML.i"
 	@echo "... PlayerCarSFML.s"
-	@echo "... RoadBarrier.o"
-	@echo "... RoadBarrier.i"
-	@echo "... RoadBarrier.s"
 	@echo "... World.o"
 	@echo "... World.i"
 	@echo "... World.s"

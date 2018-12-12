@@ -9,6 +9,10 @@
 #include <cmath>
 class Entity {
 public:
+    struct coordinats {
+        float y = 0;
+        float x = 0;
+    };
     Entity();
     virtual ~Entity() = default;
 
@@ -18,30 +22,35 @@ public:
 
     virtual void WallCollision() =0;
 
+    virtual bool OnCollision(std::shared_ptr<Entity> other) = 0;
 
-    struct coordinats {
-        float y = 0;
-        float x = 0;
-    };
+
+
 
 protected:
 
     coordinats hit;
-public:
-    void setHit(const float x, const float y);
-
-public:
-    const coordinats &getHit() const;
-
-protected:
     coordinats size;
     coordinats speed;
     coordinats position;
     coordinats hardness;
+    bool vunerable;
+    bool hitting = false;
 public:
-    const coordinats &getHardness() const;
+    bool isHitting() const;
+
+    void setHitting(bool hitting);
 
 public:
+    bool isVunerable() const;
+
+    void setVunerable(bool vunerable);
+
+public:
+    void setHit(const float x, const float y);
+
+    const coordinats &getHit() const;
+    const coordinats &getHardness() const;
     const coordinats getSize() const;
     coordinats getPosition() const;
     coordinats& getSpeed();
@@ -49,7 +58,6 @@ public:
     void setPosition(const coordinats& posistion);
     void setPosition(float x, float y);
 
-    void OnCollision(coordinats direction, coordinats& sp, const coordinats hard);
 
 };
 

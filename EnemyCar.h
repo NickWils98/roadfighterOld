@@ -15,7 +15,7 @@ public:
     ~EnemyCar() = default;
     virtual void render() = 0;
     void goDown(float deltatime);
-
+    bool OnCollision(std::shared_ptr<Entity> other);
 
 protected:
 

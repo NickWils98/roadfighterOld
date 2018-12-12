@@ -19,6 +19,7 @@ CarSFML::CarSFML(std::shared_ptr<sf::Texture> tex, sf::Vector2f s, sf::Vector2f 
     hardness.y = 0.8;
     acceler = acccel;
     maxspeed= speed;
+    vunerable = true;
 }
 
 CarSFML::~CarSFML() {

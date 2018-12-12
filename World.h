@@ -19,9 +19,10 @@ public:
     void add(std::shared_ptr<Entity> obj);
     void update();
     void WallCollision();
-    void remove();
+    void remove(std::shared_ptr<Entity> toDel);
     void render();
     void Collision();
+    virtual bool OnCollision(std::shared_ptr<Entity> other);
 };
 
 

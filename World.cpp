@@ -30,12 +30,15 @@ void World::update() {
 void World::Collision() {
     if(!entityList.empty()) {
         for (int i = 0; i < entityList.size() - 1; i++) {
-            for (int j = i + 1; j < entityList.size(); j++) {
+            for (int j = 0; j < entityList.size(); j++) {
                 if (i != j) {
                     Collider col(entityList[i]);
                     Collider col2(entityList[j]);
                     if(col.CheckCollision(col2, 1.0f)){
-                        entityList[i]->OnCollision(entityList[i]->getHit(), entityList[j]->getSpeed(), entityList[j]->getHardness());
+                        bool del = entityList[i]->OnCollision(entityList[j]);
+                        if(del){
+                            remove(entityList[j]);
+                        }
                     }
                 }
             }
@@ -48,4 +51,16 @@ void World::WallCollision() {
         obj->WallCollision();
     }
 
+}
+
+bool World::OnCollision(std::shared_ptr<Entity> other) {
+    return false;
+}
+
+void World::remove(std::shared_ptr<Entity> toDel) {
+    for (int i = 0; i < entityList.size(); ++i) {
+        if(entityList[i] == toDel){
+            entityList.erase(entityList.begin()+i);
+        }
+    }
 }

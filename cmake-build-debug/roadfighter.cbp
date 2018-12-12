@@ -170,6 +170,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/nick/Desktop/roadfighter/Bullet.cpp">
+			<Option target="roadfighter_sfml"/>
+		</Unit>
+		<Unit filename="/home/nick/Desktop/roadfighter/Bullet.h">
+			<Option target="roadfighter_sfml"/>
+		</Unit>
+		<Unit filename="/home/nick/Desktop/roadfighter/BulletSFML.cpp">
+			<Option target="roadfighter_sfml"/>
+		</Unit>
+		<Unit filename="/home/nick/Desktop/roadfighter/BulletSFML.h">
+			<Option target="roadfighter_sfml"/>
+		</Unit>
 		<Unit filename="/home/nick/Desktop/roadfighter/Car.cpp">
 			<Option target="roadfighter_sfml"/>
 		</Unit>
@@ -206,10 +218,16 @@
 		<Unit filename="/home/nick/Desktop/roadfighter/Game.h">
 			<Option target="roadfighter_sfml"/>
 		</Unit>
-		<Unit filename="/home/nick/Desktop/roadfighter/Player.cpp">
+		<Unit filename="/home/nick/Desktop/roadfighter/PassingCar.cpp">
 			<Option target="roadfighter_sfml"/>
 		</Unit>
-		<Unit filename="/home/nick/Desktop/roadfighter/Player.h">
+		<Unit filename="/home/nick/Desktop/roadfighter/PassingCar.h">
+			<Option target="roadfighter_sfml"/>
+		</Unit>
+		<Unit filename="/home/nick/Desktop/roadfighter/PassingCarSFML.cpp">
+			<Option target="roadfighter_sfml"/>
+		</Unit>
+		<Unit filename="/home/nick/Desktop/roadfighter/PassingCarSFML.h">
 			<Option target="roadfighter_sfml"/>
 		</Unit>
 		<Unit filename="/home/nick/Desktop/roadfighter/PlayerCar.cpp">
@@ -222,12 +240,6 @@
 			<Option target="roadfighter_sfml"/>
 		</Unit>
 		<Unit filename="/home/nick/Desktop/roadfighter/PlayerCarSFML.h">
-			<Option target="roadfighter_sfml"/>
-		</Unit>
-		<Unit filename="/home/nick/Desktop/roadfighter/RoadBarrier.cpp">
-			<Option target="roadfighter_sfml"/>
-		</Unit>
-		<Unit filename="/home/nick/Desktop/roadfighter/RoadBarrier.h">
 			<Option target="roadfighter_sfml"/>
 		</Unit>
 		<Unit filename="/home/nick/Desktop/roadfighter/World.cpp">

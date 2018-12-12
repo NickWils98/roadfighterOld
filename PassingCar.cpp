@@ -1,11 +1,10 @@
 //
-// Created by nick on 04.12.18.
+// Created by nick on 12.12.18.
 //
 
-#include <iostream>
-#include "EnemyCar.h"
+#include "PassingCar.h"
 
-void EnemyCar::goDown(float deltaTime) {
+void PassingCar::goDown(float deltaTime) {
     if(-maxspeed>speed.y){
         speed.y += deltaTime*3;
     } else if(speed.y>0){
@@ -19,7 +18,7 @@ void EnemyCar::goDown(float deltaTime) {
 }
 
 
-bool EnemyCar::OnCollision(std::shared_ptr<Entity> other) {
+bool PassingCar::OnCollision(std::shared_ptr<Entity> other) {
     coordinats direction = other->getHit();
     coordinats& sp = other->getSpeed();
     const coordinats hard = other->getHardness();

@@ -14,6 +14,7 @@ public:
 
     Car();
 
+    virtual bool OnCollision(std::shared_ptr<Entity> other) = 0;
     void WallCollision() override;
     float acceler;
     float maxspeed;

@@ -4,8 +4,8 @@
 
 #include "PlayerCarSFML.h"
 
-PlayerCarSFML::PlayerCarSFML(std::shared_ptr<sf::Texture> tex, sf::Vector2f s, sf::Vector2f pos, sf::RenderWindow &window, float maxsp, float acceler)
-        : window(window) {
+PlayerCarSFML::PlayerCarSFML(std::shared_ptr<sf::Texture> tex, sf::Vector2f s, sf::Vector2f pos, sf::RenderWindow &window, float maxsp, float acceler, std::shared_ptr<Bullet> bullet1)
+        : window(window){
     body.setSize(s);
     body.setTexture(tex.get());
     body.setPosition(pos);
@@ -18,11 +18,12 @@ PlayerCarSFML::PlayerCarSFML(std::shared_ptr<sf::Texture> tex, sf::Vector2f s, s
     hardness.x = 0.2;
     hardness.y = 0.8;
 
-
+    vunerable = false;
     speed.x = 0;
     speed.y = 0;
     size.x = s.x;
     size.y = s.y;
+    bullet = bullet1;
 }
 
 PlayerCarSFML::~PlayerCarSFML() {
@@ -44,6 +45,8 @@ std::vector<bool> PlayerCarSFML::getInput() {
     input.push_back(sf::Keyboard::isKeyPressed(sf::Keyboard::Right));
     input.push_back(sf::Keyboard::isKeyPressed(sf::Keyboard::Up));
     input.push_back(sf::Keyboard::isKeyPressed(sf::Keyboard::Down));
+    input.push_back(sf::Keyboard::isKeyPressed(sf::Keyboard::Space));
+    input.push_back(sf::Keyboard::isKeyPressed(sf::Keyboard::U));
     return input;
 }
 

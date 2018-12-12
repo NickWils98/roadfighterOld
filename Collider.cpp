@@ -90,3 +90,7 @@ void Collider::update() {
 void Collider::WallCollision() {
 
 }
+
+bool Collider::OnCollision(std::shared_ptr<Entity> other) {
+
+}

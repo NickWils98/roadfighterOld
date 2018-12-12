@@ -4,16 +4,18 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/nick/Desktop/roadfighter/Bullet.cpp" "/home/nick/Desktop/roadfighter/cmake-build-debug/CMakeFiles/roadfighter_sfml.dir/Bullet.cpp.o"
+  "/home/nick/Desktop/roadfighter/BulletSFML.cpp" "/home/nick/Desktop/roadfighter/cmake-build-debug/CMakeFiles/roadfighter_sfml.dir/BulletSFML.cpp.o"
   "/home/nick/Desktop/roadfighter/Car.cpp" "/home/nick/Desktop/roadfighter/cmake-build-debug/CMakeFiles/roadfighter_sfml.dir/Car.cpp.o"
   "/home/nick/Desktop/roadfighter/CarSFML.cpp" "/home/nick/Desktop/roadfighter/cmake-build-debug/CMakeFiles/roadfighter_sfml.dir/CarSFML.cpp.o"
   "/home/nick/Desktop/roadfighter/Collider.cpp" "/home/nick/Desktop/roadfighter/cmake-build-debug/CMakeFiles/roadfighter_sfml.dir/Collider.cpp.o"
   "/home/nick/Desktop/roadfighter/EnemyCar.cpp" "/home/nick/Desktop/roadfighter/cmake-build-debug/CMakeFiles/roadfighter_sfml.dir/EnemyCar.cpp.o"
   "/home/nick/Desktop/roadfighter/Entity.cpp" "/home/nick/Desktop/roadfighter/cmake-build-debug/CMakeFiles/roadfighter_sfml.dir/Entity.cpp.o"
   "/home/nick/Desktop/roadfighter/Game.cpp" "/home/nick/Desktop/roadfighter/cmake-build-debug/CMakeFiles/roadfighter_sfml.dir/Game.cpp.o"
-  "/home/nick/Desktop/roadfighter/Player.cpp" "/home/nick/Desktop/roadfighter/cmake-build-debug/CMakeFiles/roadfighter_sfml.dir/Player.cpp.o"
+  "/home/nick/Desktop/roadfighter/PassingCar.cpp" "/home/nick/Desktop/roadfighter/cmake-build-debug/CMakeFiles/roadfighter_sfml.dir/PassingCar.cpp.o"
+  "/home/nick/Desktop/roadfighter/PassingCarSFML.cpp" "/home/nick/Desktop/roadfighter/cmake-build-debug/CMakeFiles/roadfighter_sfml.dir/PassingCarSFML.cpp.o"
   "/home/nick/Desktop/roadfighter/PlayerCar.cpp" "/home/nick/Desktop/roadfighter/cmake-build-debug/CMakeFiles/roadfighter_sfml.dir/PlayerCar.cpp.o"
   "/home/nick/Desktop/roadfighter/PlayerCarSFML.cpp" "/home/nick/Desktop/roadfighter/cmake-build-debug/CMakeFiles/roadfighter_sfml.dir/PlayerCarSFML.cpp.o"
-  "/home/nick/Desktop/roadfighter/RoadBarrier.cpp" "/home/nick/Desktop/roadfighter/cmake-build-debug/CMakeFiles/roadfighter_sfml.dir/RoadBarrier.cpp.o"
   "/home/nick/Desktop/roadfighter/World.cpp" "/home/nick/Desktop/roadfighter/cmake-build-debug/CMakeFiles/roadfighter_sfml.dir/World.cpp.o"
   "/home/nick/Desktop/roadfighter/main.cpp" "/home/nick/Desktop/roadfighter/cmake-build-debug/CMakeFiles/roadfighter_sfml.dir/main.cpp.o"
   )

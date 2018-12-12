@@ -24,6 +24,8 @@ public:
 
     virtual void WallCollision();
 
+    virtual bool OnCollision(std::shared_ptr<Entity> other);
+
 private:
     std::shared_ptr<Entity> object;
 

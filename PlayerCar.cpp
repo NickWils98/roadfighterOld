@@ -80,10 +80,74 @@ void PlayerCar::Update(float deltaTime, std::vector<bool> input) {
     position.x += speed.x;
     position.y += speed.y;
     //std::cout<<speed.x<<"     "<<speed.y<<"    "<<deltaTime<<std::endl;
+
+    if(input[4]){
+        fire();
+    }
+    if(bullet->isFired()) {
+        coordinats bulletCoor = bullet->getPosition();
+        bulletCoor.y += bullet->getFireSpeed();
+        bullet->setPosition(bulletCoor);
+        if(abs(abs(bullet->getPosition().y) - abs(position.y)) > 431){
+            bullet->setFired(false);
+            bullet->setPosition(0,0);
+        }
+    }
 }
 
 
 float PlayerCar::getSpeed(){
     return speed.y;
+}
+
+void PlayerCar::fire() {
+    if(!bullet->isFired()) {
+        bullet->setPosition(getPosition());
+        bullet->setFired(true);
+    }
+}
+
+bool PlayerCar::OnCollision(std::shared_ptr<Entity> other) {
+    coordinats direction = other->getHit();
+    coordinats& sp = other->getSpeed();
+    const coordinats hard = other->getHardness();
+    if(direction.x < 0.0f){
+        //Collision on the left.
+        speed.x = speed.x*hard.x;
+    } else if(direction.x > 0.0f){
+        //Collision on the right.
+        speed.x = speed.x*hard.x;
+    }
+       if(direction.y < 0.0f){
+        //Collision on the top.
+        float diff = speed.y+sp.y;
+        if(hardness.y<hard.y) {
+            speed.y = diff *(hard.y-hardness.y)/2;
+            sp.y = diff/2;
+        } else if(hardness.y> hard.y) {
+            sp.y = diff *(hardness.y-hard.y)/2;
+            speed.y = diff/2;
+        } else{
+            speed.y = diff /2;
+            sp.y = diff*0.9/2;
+        }
+
+
+
+    } else if(direction.y > 0.0f){
+        //Collision on the bottom.
+        float diff = speed.y+sp.y;
+        if(hardness.y>hard.y) {
+            speed.y = diff *(hard.y-hardness.y)/2;
+            sp.y = diff/2;
+        } else if(hardness.y< hard.y) {
+            sp.y = diff *(hardness.y-hard.y)/2;
+            speed.y = diff/2;
+        } else{
+            speed.y = diff *0.9/2;
+            sp.y = diff/2;
+        }
+    }
+    return false;
 }
 

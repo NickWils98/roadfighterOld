@@ -7,6 +7,7 @@
 
 #include <vector>
 #include "Car.h"
+#include "BulletSFML.h"
 
 class PlayerCar: public Car {
 public:
@@ -16,6 +17,8 @@ public:
     void Update(float deltaTime, std::vector<bool> input);
     virtual std::vector<bool> getInput() = 0;
     float getSpeed();
+    void fire();
+    bool OnCollision(std::shared_ptr<Entity> other);
 
 protected:
     float totaltime;
@@ -27,6 +30,7 @@ protected:
     float jumpHeight;
     float velocityX;
     float velocityY;
+    std::shared_ptr<Bullet> bullet= nullptr;
 
 };
 

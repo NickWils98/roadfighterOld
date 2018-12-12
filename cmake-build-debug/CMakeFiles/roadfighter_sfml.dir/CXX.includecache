@@ -6,6 +6,26 @@
 
 #IncludeRegexTransform: 
 
+/home/nick/Desktop/roadfighter/Bullet.cpp
+Bullet.h
+/home/nick/Desktop/roadfighter/Bullet.h
+
+/home/nick/Desktop/roadfighter/Bullet.h
+Entity.h
+/home/nick/Desktop/roadfighter/Entity.h
+
+/home/nick/Desktop/roadfighter/BulletSFML.cpp
+BulletSFML.h
+/home/nick/Desktop/roadfighter/BulletSFML.h
+
+/home/nick/Desktop/roadfighter/BulletSFML.h
+SFML/Graphics.hpp
+-
+memory
+-
+Bullet.h
+/home/nick/Desktop/roadfighter/Bullet.h
+
 /home/nick/Desktop/roadfighter/Car.cpp
 iostream
 -
@@ -69,6 +89,10 @@ Game.h
 /home/nick/Desktop/roadfighter/Game.h
 PlayerCarSFML.h
 /home/nick/Desktop/roadfighter/PlayerCarSFML.h
+PassingCar.h
+/home/nick/Desktop/roadfighter/PassingCar.h
+random
+-
 
 /home/nick/Desktop/roadfighter/Game.h
 SFML/Graphics.hpp
@@ -91,14 +115,28 @@ PlayerCar.h
 /home/nick/Desktop/roadfighter/PlayerCar.h
 PlayerCarSFML.h
 /home/nick/Desktop/roadfighter/PlayerCarSFML.h
+PassingCarSFML.h
+/home/nick/Desktop/roadfighter/PassingCarSFML.h
 memory
 -
 
-/home/nick/Desktop/roadfighter/Player.cpp
-Player.h
-/home/nick/Desktop/roadfighter/Player.h
+/home/nick/Desktop/roadfighter/PassingCar.cpp
+PassingCar.h
+/home/nick/Desktop/roadfighter/PassingCar.h
 
-/home/nick/Desktop/roadfighter/Player.h
+/home/nick/Desktop/roadfighter/PassingCar.h
+Car.h
+/home/nick/Desktop/roadfighter/Car.h
+
+/home/nick/Desktop/roadfighter/PassingCarSFML.cpp
+PassingCarSFML.h
+/home/nick/Desktop/roadfighter/PassingCarSFML.h
+
+/home/nick/Desktop/roadfighter/PassingCarSFML.h
+SFML/Graphics.hpp
+-
+PassingCar.h
+/home/nick/Desktop/roadfighter/PassingCar.h
 
 /home/nick/Desktop/roadfighter/PlayerCar.cpp
 math.h
@@ -113,6 +151,8 @@ vector
 -
 Car.h
 /home/nick/Desktop/roadfighter/Car.h
+BulletSFML.h
+/home/nick/Desktop/roadfighter/BulletSFML.h
 
 /home/nick/Desktop/roadfighter/PlayerCarSFML.cpp
 PlayerCarSFML.h
@@ -123,14 +163,6 @@ SFML/Graphics.hpp
 -
 PlayerCar.h
 /home/nick/Desktop/roadfighter/PlayerCar.h
-
-/home/nick/Desktop/roadfighter/RoadBarrier.cpp
-RoadBarrier.h
-/home/nick/Desktop/roadfighter/RoadBarrier.h
-
-/home/nick/Desktop/roadfighter/RoadBarrier.h
-Entity.h
-/home/nick/Desktop/roadfighter/Entity.h
 
 /home/nick/Desktop/roadfighter/World.cpp
 iostream

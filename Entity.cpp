@@ -27,45 +27,6 @@ Entity::coordinats& Entity::getSpeed() {
     return speed;
 }
 
-void Entity::OnCollision(coordinats direction, coordinats& sp, const coordinats hard) {
-    if(direction.x < 0.0f){
-        //Collision on the left.
-        speed.x = speed.x*hard.x;
-    } else if(direction.x > 0.0f){
-        //Collision on the right.
-        speed.x = speed.x*hard.x;
-    }
-    if(direction.y < 0.0f){
-        //Collision on the top.
-        float diff = speed.y+sp.y;
-        if(hardness.y<hard.y) {
-            speed.y = diff *(hard.y-hardness.y)/2;
-            sp.y = diff/2;
-        } else if(hardness.y> hard.y) {
-            sp.y = diff *(hardness.y-hard.y)/2;
-            speed.y = diff/2;
-        } else{
-            sp.y = diff /2;
-            speed.y = diff*0.9/2;
-        }
-
-
-
-    } else if(direction.y > 0.0f){
-        //Collision on the bottom.
-        float diff = speed.y+sp.y;
-        if(hardness.y>hard.y) {
-            speed.y = diff *(hard.y-hardness.y)/2;
-            sp.y = diff/2;
-        } else if(hardness.y< hard.y) {
-            sp.y = diff *(hardness.y-hard.y)/2;
-            speed.y = diff/2;
-        } else{
-            sp.y = diff *0.9/2;
-            speed.y = diff/2;
-        }
-    }
-}
 
 
 
@@ -85,4 +46,20 @@ void Entity::setHit(const float x, const float y) {
 
 const Entity::coordinats &Entity::getHardness() const {
     return hardness;
+}
+
+bool Entity::isVunerable() const {
+    return vunerable;
+}
+
+void Entity::setVunerable(bool vunerable) {
+    Entity::vunerable = vunerable;
+}
+
+bool Entity::isHitting() const {
+    return hitting;
+}
+
+void Entity::setHitting(bool hitting) {
+    Entity::hitting = hitting;
 }

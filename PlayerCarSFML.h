@@ -11,17 +11,19 @@
 
 class PlayerCarSFML: public PlayerCar {
 public:
-    PlayerCarSFML(std::shared_ptr<sf::Texture> tex, sf::Vector2f size, sf::Vector2f position, sf::RenderWindow& window, float maxsp, float acceler);
+    PlayerCarSFML(std::shared_ptr<sf::Texture> tex, sf::Vector2f size, sf::Vector2f position, sf::RenderWindow& window, float maxsp, float acceler, std::shared_ptr<Bullet> bullet1);
 
     virtual ~PlayerCarSFML();
     void update();
     void render() override ;
     std::vector<bool> getInput() override ;
+    std::shared_ptr<Bullet> fire();
 
+
+protected:
+    sf::RenderWindow& window;
     sf::RectangleShape body;
 
-private:
-    sf::RenderWindow& window;
 };
 
 #endif //ROADFIGHTER_PLAYERCARSFML_H
